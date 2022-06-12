@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Gyldendal.Api.Core.Contracts</id>
+    <version>1.7.9</version>
+    <authors>sn.synergy</authors>
+    <projectUrl>https://gyldendaldenmark.visualstudio.com/Core Data Services/_git/core-data-services?path=/Gyldendal.Api.Core.Data/Gyldendal.Api.CoreData.ApiClient</projectUrl>
+    <description>Package Description</description>
+    <copyright>© Gyldendal</copyright>
+    <tags>CoreData Core Contracts</tags>
+    <repository url="https://gyldendaldenmark.visualstudio.com/Core Data Services/_git/core-data-services" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="Gyldendal.Api.CommonContracts" version="1.8.6" exclude="Build,Analyzers" />
+        <dependency id="Gyldendal.Api.ShopServices.Contracts" version="1.6.4" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.ComponentModel.DataAnnotations" targetFramework=".NETFramework4.6.1" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\bin\Debug\net461\Gyldendal.Api.CoreData.Contracts.dll" target="lib\net461\Gyldendal.Api.CoreData.Contracts.dll" />
+  </files>
+</package>

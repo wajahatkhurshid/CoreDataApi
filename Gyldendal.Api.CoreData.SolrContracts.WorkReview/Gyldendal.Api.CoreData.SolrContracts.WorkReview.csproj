@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Version>2.0.5</Version>
+    <PackageVersion>$(Version)</PackageVersion>
+    <PackageOutputPath>..\build_output\packages</PackageOutputPath>
+    <TargetFramework>net461</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <AssemblyVersion>$(Version)</AssemblyVersion>
+    <FileVersion>$(Version)</FileVersion>
+    <IncludeSymbols>true</IncludeSymbols>
+    <Authors>sn.synergy</Authors>
+    <Company>Gyldendal™</Company>
+    <PackageTags>Solr;Contracts</PackageTags>
+    <Copyright>© Gyldendal</Copyright>
+    <PackageProjectUrl>https://gyldendaldenmark.visualstudio.com/Core%20Data%20Services/_git/core-data-services?path=%2FGyldendal.Api.Core.Data%2FGyldendal.Api.CoreData.ApiClient</PackageProjectUrl>
+    <RepositoryUrl>https://gyldendaldenmark.visualstudio.com/Core%20Data%20Services/_git/core-data-services</RepositoryUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+  <Target Name="PostBuild" AfterTargets="Pack">
+    <Exec Command="nuget push &quot;$(PackageOutputPath)\$(PackageId).$(PackageVersion).nupkg&quot; -ApiKey 24FCB347-75E6-41D6-BF80-E49CB142C092 -Source &quot;https://gyldendalnugetserver.azurewebsites.net/nuget&quot;&#xD;&#xA;nuget push &quot;$(PackageOutputPath)\$(PackageId).$(PackageVersion).symbols.nupkg&quot; -ApiKey 24FCB347-75E6-41D6-BF80-E49CB142C092 -Source &quot;https://gyldendalnugetserver.azurewebsites.net/nuget&quot;&#xD;&#xA;Exit /B 0&#xD;&#xA;" />
+  </Target>
+  <ItemGroup>
+    <PackageReference Include="SolrNet" version="1.0.19" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="WorkReview.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>WorkReview.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="WorkReview.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>WorkReview.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="schema.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>schema.xml</LastGenOutput>
+    </None>
+    <None Update="schema.txt">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>schema.tt</DependentUpon>
+    </None>
+    <None Update="schema.xml">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>schema.tt</DependentUpon>
+    </None>
+  </ItemGroup>
+</Project>

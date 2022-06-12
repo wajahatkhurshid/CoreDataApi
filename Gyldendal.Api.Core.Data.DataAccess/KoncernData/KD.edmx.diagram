@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="72f679463ce940a8830dd2ed32577f01" Name="Diagram1" ZoomLevel="61">
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUauthors" PointX="19" PointY="26.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUauthorsLog" PointX="34.75" PointY="22.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUcategory" PointX="19" PointY="4.125" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUcategoryLog" PointX="34.75" PointY="25.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUContributors" PointX="16" PointY="4.875" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUContributorsLog" PointX="34.75" PointY="28.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUlevel" PointX="22" PointY="7.5" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUlevelLog" PointX="34.75" PointY="31.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUmaterialtype" PointX="31.75" PointY="38.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUmedietype" PointX="33.75" PointY="38.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUproductauthorsLog" PointX="32.75" PointY="25.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUProductCategories" PointX="21.25" PointY="11.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUProductCategoriesLog" PointX="33.75" PointY="7.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUproductcontributors" PointX="18.25" PointY="10.625" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUproductcontributorsLog" PointX="33.75" PointY="35.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUProductLevels" PointX="24.25" PointY="14.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUProductLevelsLog" PointX="34.75" PointY="4.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUproductLog" PointX="0.75" PointY="38.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUproductseries" PointX="18.25" PointY="18.5" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUproductseriesLog" PointX="2.75" PointY="38.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUProductThemacode" PointX="21.25" PointY="14.5" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUProductThemacodeLog" PointX="4.75" PointY="38.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUroles" PointX="16" PointY="22.875" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUrolesLog" PointX="34.75" PointY="10.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUSerieCategories" PointX="21.25" PointY="22.125" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUSerieCategoriesLog" PointX="34.75" PointY="13.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUseriesLevel" PointX="26.25" PointY="17.625" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUseriesLevelLog" PointX="33.625" PointY="16.25" Width="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUseriesLog" PointX="34.75" PointY="19.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUThemacode" PointX="19" PointY="22.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUThemacodeLog" PointX="32.75" PointY="28.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUwork" PointX="13.75" PointY="14.125" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUWorkLog" PointX="35.75" PointY="7.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRauthors" PointX="6" PointY="28.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRauthorsLog" PointX="36.75" PointY="28.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRcategory" PointX="6" PointY="4.875" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRcategoryLog" PointX="36.75" PointY="31.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRContributors" PointX="6" PointY="21" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRContributorsLog" PointX="34.25" PointY="40.375" Width="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRlevel" PointX="3" PointY="27.625" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRlevelLog" PointX="0.75" PointY="41.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRmaterialtype" PointX="2.75" PointY="41.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRmedietype" PointX="37.75" PointY="7.25" Width="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRproductauthorsLog" PointX="18.75" PointY="39.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRProductCategories" PointX="8.25" PointY="11.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRProductCategoriesLog" PointX="20.75" PointY="39.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRproductcontributors" PointX="8.25" PointY="14.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRproductcontributorsLog" PointX="35.75" PointY="34.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRProductLevels" PointX="5.25" PointY="17.875" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRProductLevelsLog" PointX="35.75" PointY="37.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRproductLog" PointX="36.75" PointY="4.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRproductseries" PointX="5.25" PointY="10.625" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRproductseriesLog" PointX="36.75" PointY="10.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRProductThemacode" PointX="5.25" PointY="14.625" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRProductThemacodeLog" PointX="36.75" PointY="13.25" Width="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRroles" PointX="6" PointY="25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRrolesLog" PointX="36.75" PointY="16.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRSerieCategories" PointX="11.25" PointY="4.875" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRSerieCategoriesLog" PointX="36.75" PointY="19.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRseriesLevel" PointX="8.25" PointY="21.375" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRseriesLevelLog" PointX="36.75" PointY="25.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRseriesLog" PointX="36.75" PointY="22.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRThemacode" PointX="3" PointY="23.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRThemacodeLog" PointX="10.75" PointY="27.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRwork" PointX="0.75" PointY="14.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRWorkLog" PointX="12.75" PointY="27.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKauthors" PointX="27" PointY="45.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKauthorsLog" PointX="24.75" PointY="7.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKcategory" PointX="27" PointY="21.875" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKcategoryLog" PointX="25.75" PointY="4.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKContributors" PointX="27" PointY="38" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKContributorsLog" PointX="25.75" PointY="10.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKlevel" PointX="24" PointY="44.625" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKlevelLog" PointX="26.75" PointY="7.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKmaterialtype" PointX="26.75" PointY="13.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKmedietype" PointX="10.75" PointY="30.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKproductauthorsLog" PointX="10.75" PointY="18.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKProductCategories" PointX="29.25" PointY="28.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKProductCategoriesLog" PointX="12.75" PointY="18.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKproductcontributors" PointX="29.25" PointY="31.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKproductcontributorsLog" PointX="10.75" PointY="21.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKProductLevels" PointX="26.25" PointY="34.875" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKProductLevelsLog" PointX="12.75" PointY="21.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKproductLog" PointX="10.75" PointY="24.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKproductseries" PointX="26.25" PointY="27.625" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKproductseriesLog" PointX="12.75" PointY="24.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKProductThemacode" PointX="26.25" PointY="31.625" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKProductThemacodeLog" PointX="21.75" PointY="4.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKroles" PointX="27" PointY="42" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKrolesLog" PointX="23.75" PointY="4.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKSerieCategories" PointX="32.25" PointY="21.875" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKSerieCategoriesLog" PointX="23.75" PointY="11.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKseriesLevel" PointX="29.25" PointY="38.375" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKseriesLevelLog" PointX="12.75" PointY="30.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKseriesLog" PointX="28.75" PointY="13.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKThemacode" PointX="24" PointY="40.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKThemacodeLog" PointX="29.75" PointY="10.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKwork" PointX="21.75" PointY="31.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKWorkLog" PointX="0.75" PointY="34.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUproductauthors" PointX="21.25" PointY="17.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRproductauthors" PointX="8.25" PointY="17.875" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKproductauthors" PointX="29.25" PointY="34.875" Width="1.5" IsExpanded="true" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_GUproductauthors_GUauthors" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_GUProductCategories_GUCategory" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_GUSerieCategories_DEA_KDWS_GUcategory" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_GUproductcontributors_GUContributors" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.DEA_KDWS_GUseriesLevel_fkey_GUlevel" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_GUProductLevels_GUlevel" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_GUproductcontributors_GUroles" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.vare_themacode_fkey_themacode_GU" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_HRproductauthors_HRauthors" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_HRcategory_parent" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_HRProductCategories_HRCategory" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_HRSerieCategories_DEA_KDWS_HRcategory" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_HRproductcontributors_HRContributors" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.DEA_KDWS_HRseriesLevel_fkey_HRlevel" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_HRProductLevels_HRlevel" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_HRproductcontributors_HRroles" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.vare_themacode_fkey_themacode_HR" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_MUNKproductauthors_MUNKauthors" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_MUNKcategory_parent" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_MUNKProductCategories_MUNKCategory" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_MUNKSerieCategories_DEA_KDWS_MUNKcategory" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_MUNKproductcontributors_MUNKContributors" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.DEA_KDWS_MUNKseriesLevel_fkey_MUNKlevel" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_MUNKProductLevels_MUNKlevel" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.FK_DEA_KDWS_MUNKproductcontributors_MUNKroles" />
+        <AssociationConnector ManuallyRouted="false" Association="koncerndata_webshops_Model.vare_themacode_fkey_themacode_MUNK" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GU_ProdLogView" PointX="18.75" PointY="34.25" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HR_ProdLogView" PointX="2.75" PointY="35.25" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNK_ProdLogView" PointX="31.75" PointY="8.25" Width="1.5" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GUlevel_GUCategory" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_HRlevel_HRCategory" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_MUNKlevel_MUNKCategory" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_Semaphores" PointX="30.75" PointY="4.25" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUseries" PointX="16" PointY="37.125" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRseries" PointX="3" PointY="3.125" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKseries" PointX="24" PointY="20.25" Width="1.5" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_serier_fkey_serie_GU" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GUSerieCategories_DEA_KDWS_GUseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_GUseriesLevel_fkey_GUseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.serier_fkey_parent_GU" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_serier_fkey_serie_hr" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_HRSerieCategories_DEA_KDWS_HRseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_HRseriesLevel_fkey_HRseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.serier_fkey_parent_HR" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_serier_fkey_serie_MUNK" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_MUNKSerieCategories_DEA_KDWS_MUNKseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_MUNKseriesLevel_fkey_MUNKseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.serier_fkey_parent_MUNK" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GU_ProductCategoriesView" PointX="31.75" PointY="35.25" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HR_ProductCategoriesView" PointX="32.75" PointY="4.25" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNK_ProductCategoriesView" PointX="32.75" PointY="11.25" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GU_SerieCategoriesView" PointX="32.75" PointY="14.25" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HR_SerieCategoriesView" PointX="20.75" PointY="36.25" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNK_SerieCategoriesView" PointX="4.75" PointY="35.25" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUBundle" PointX="16" PointY="25.625" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUBundle_Products" PointX="18.25" PointY="14.25" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUBundleMembership" PointX="18.25" PointY="30.625" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRBundle" PointX="9" PointY="0.75" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRBundle_Products" PointX="11.25" PointY="14.375" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRBundleMembership" PointX="11.25" PointY="8.75" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKBundle" PointX="30" PointY="17.75" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKBundle_Products" PointX="32.25" PointY="31.375" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKBundleMembership" PointX="32.25" PointY="18.75" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GU_BundleCategoriesView" PointX="27.75" PointY="4.25" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GU_ConsolidatedProdLogView" PointX="0.75" PointY="31.25" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HR_BundleCategoriesView" PointX="2.75" PointY="31.25" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HR_ConsolidatedProdLogView" PointX="27.75" PointY="10.25" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNK_BundleCategoriesView" PointX="28.75" PointY="7.25" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNK_ConsolidatedProdLogView" PointX="4.75" PointY="32.25" Width="1.5" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GUBundleMembership_GUBundle" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_Bundle_HRBundle" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_HRBundleMembership_HRBundle" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_Bundle_MUNKBundle" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_MUNKBundleMembership_MUNKBundle" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_Bundle_GUBundle" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.supplerende_materialer" PointX="11" PointY="39.25" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.Campaign" PointX="8.75" PointY="49.5" Width="1.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.CampaignItem" PointX="11" PointY="34.875" Width="1.5" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_CampaignProduct_Campaign" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUattachments" Width="1.5" PointX="17.25" PointY="0.625" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRattachments" Width="1.5" PointX="1.125" PointY="1" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKattachments" Width="1.5" PointX="26.25" PointY="51.875" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUserieAreas" Width="1.5" PointX="18.25" PointY="45.375" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRserieAreas" Width="1.5" PointX="5.25" PointY="44.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKserieAreas" Width="1.5" PointX="26.25" PointY="1" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_GUserieArea_fkey_GUseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_HRserieArea_fkey_HRseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_MUNKserieArea_fkey_MUNKseries" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUserieSubAreas" Width="1.5" PointX="18.25" PointY="48.125" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRserieSubAreas" Width="1.5" PointX="5.25" PointY="47.25" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKserieSubAreas" Width="1.5" PointX="26.25" PointY="59.25" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_GUserieSubAreas_fkey_GUseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_HRserieSubAreas_fkey_HRseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_MUNKserieSubAreas_fkey_MUNKseries" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUserieSubjects" Width="1.5" PointX="18.25" PointY="42" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRserieSubjects" Width="1.5" PointX="5.25" PointY="41.125" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKserieSubjects" Width="1.5" PointX="26.25" PointY="62.125" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_GUserieSubject_fkey_GUseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_HRserieSubject_fkey_HRseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_MUNKserieSubject_fkey_MUNKseries" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUProductReviews" Width="1.5" PointX="18.25" PointY="51.375" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRProductReviews" Width="1.5" PointX="5.25" PointY="50.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKProductReviews" Width="1.5" PointX="26.25" PointY="65.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.CampaignMembership" Width="1.5" PointX="11" PointY="51.25" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_CampaignMembership_Campaign" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GU_LevelCategoriesView" Width="1.5" PointX="11.375" PointY="0.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HR_LevelCategoriesView" Width="1.5" PointX="13.375" PointY="0.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_Munk_LevelCategoriesView" Width="1.5" PointX="15.375" PointY="0.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.varer" Width="1.5" PointX="0.75" PointY="27.375" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_CampaignItem_varer" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GyldendalGDkWork" Width="1.5" PointX="38.375" PointY="35" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GyldendalGDKWorkReview" Width="3.625" PointX="40.625" PointY="35.125" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_GyldendalGDKWorkReview_GyldendalGDKWork" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKattachments" Width="2" PointX="42.875" PointY="64.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKattachmentsLog" Width="1.5" PointX="28.875" PointY="0.875" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKBundle" Width="2" PointX="43" PointY="39.375" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKBundle_Products" Width="1.5" PointX="45.875" PointY="53.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKBundle_ProductsLog" Width="1.5" PointX="31" PointY="0.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKBundleLog" Width="1.5" PointX="32.875" PointY="0.875" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKBundleMembership" Width="3.125" PointX="45.875" PointY="42.125" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKcategory" Width="2.125" PointX="38.75" PointY="1" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKContributors" Width="1.5" PointX="40.625" PointY="63.875" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKproductcontributors" Width="1.5" PointX="42.875" PointY="54" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKProductReviews" Width="1.5" PointX="42.875" PointY="69.125" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKproductseries" Width="1.5" PointX="42.875" PointY="50" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKProductThemacode" Width="2.875" PointX="40.75" PointY="28.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKProductThemacodeLog" Width="1.5" PointX="29.375" PointY="41.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKroles" Width="2.5" PointX="39.625" PointY="61.375" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKSerieCategories" Width="2.5" PointX="40" PointY="21.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKSerieCategoriesLog" Width="1.5" PointX="31.375" PointY="41.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKseries" Width="2.25" PointX="40.125" PointY="39.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKThemacode" Width="3" PointX="43.375" PointY="3.625" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKThemacodeLog" Width="1.5" PointX="20.375" PointY="42.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKWork" Width="1.5" PointX="33.25" PointY="49.25" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKWorkReview" Width="1.5" PointX="40.625" PointY="46.375" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_Bundle_GDKBundle" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GDKBundleMembership_GDKBundle" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GDKcategory_parent" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GDKSerieCategories_DEA_KDWS_GDKcategory" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GDKproductcontributors_GDKContributors" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GDKproductcontributors_GDKroles" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_serier_fkey_serie_GDK" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GDKSerieCategories_DEA_KDWS_GDKseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.serier_fkey_parent_GDK" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_GDKWorkReview_GDKWork" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKauthors" Width="1.5" PointX="43.625" PointY="72.875" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKproductauthors" Width="1.5" PointX="45.875" PointY="57.5" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GDKVareforfatter_GDKforfatter1" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDK_ConsolidatedProdLogView" Width="1.5" PointX="39.375" PointY="10.75" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_themacode_fkey_themacode_GDK" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDK_BundleCategoriesView" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDK_SerieCategoriesView" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKWorkLog" Width="1.5" PointX="39.375" PointY="13.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKWorkReviewLog" Width="1.5" PointX="39.375" PointY="16.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDK_ProductCategoriesView" Width="1.5" PointX="12.375" PointY="11.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_Ekey_ConsolidatedProdLogView" Width="3.125" PointX="19.375" PointY="0.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.ConsolidatedContributorLogView" Width="1.5" PointX="23.375" PointY="0.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.ConsolidatedContributorView" Width="2.625" PointX="22.375" PointY="35.625" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.ConsolidatedProductContributorView" Width="1.5" PointX="21.375" PointY="27.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.ConsolidatedWorkReviewView" Width="1.5" PointX="45.375" PointY="11.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.ConsolidatedWorkReviewLogView" Width="1.5" PointX="45.375" PointY="8.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_ROSforfatter" Width="1.5" PointX="48.375" PointY="53.25" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_ROShierarki" Width="1.5" PointX="48.375" PointY="57" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_ROSillustrator" Width="1.5" PointX="48.375" PointY="49.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_ROSpressForfatter" Width="1.5" PointX="20.375" PointY="52.25" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_ROSpressMateriale" Width="1.5" PointX="22.625" PointY="54.125" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_ROSpressVare" Width="1.5" PointX="22.625" PointY="50.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_ROSpublisher" Width="1.5" PointX="48.375" PointY="60" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_ROSvare" Width="1.5" PointX="52.875" PointY="51.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_ROSwork" Width="1.5" PointX="50.625" PointY="52.375" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_ROSpressMateriale_ROSpressforfatter" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_ROSwork_ROSpublisher" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_ROSvare_ROSWork" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_ROSpressVareForfatter" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_ROSworkForfatter" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_ROSworkhierarki" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_ROSworkIllustrator" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusattachments" Width="1.5" PointX="5.25" PointY="90.375" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusattachmentsLog" Width="1.5" PointX="23.75" PointY="27.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusauthors" Width="1.5" PointX="6" PointY="60.875" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusauthorsLog" Width="1.5" PointX="35.75" PointY="0.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusBundle" Width="1.5" PointX="6" PointY="99.25" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusBundle_Products" Width="1.5" PointX="8.25" PointY="75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusBundle_ProductsLog" Width="1.5" PointX="39.75" PointY="25.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusBundleLog" Width="1.5" PointX="40.75" PointY="5.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusBundleMembership" Width="1.5" PointX="8.25" PointY="103.375" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusBundleMembershipLog" Width="1.5" PointX="41.75" PointY="0.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPluscategory" Width="1.5" PointX="0.75" PointY="58.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPluscategoryLog" Width="1.5" PointX="41.75" PointY="8.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusContributorsLog" Width="1.5" PointX="41.75" PointY="11.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPluslevel" Width="1.5" PointX="3" PointY="60.125" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPluslevelLog" Width="1.5" PointX="41.75" PointY="14.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusmaterialtype" Width="1.5" PointX="41.75" PointY="17.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusmedietype" Width="1.5" PointX="41.75" PointY="25.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusproductauthorsLog" Width="1.5" PointX="43.75" PointY="0.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusProductCategories" Width="1.5" PointX="5.25" PointY="68.375" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusProductCategoriesLog" Width="1.5" PointX="43.75" PointY="15.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusproductcontributors" Width="1.5" PointX="5.25" PointY="75.125" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusproductcontributorsLog" Width="1.5" PointX="43.75" PointY="18.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusProductLevels" Width="1.5" PointX="5.25" PointY="65.375" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusProductLevelsLog" Width="1.5" PointX="43.75" PointY="24.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusproductLog" Width="1.5" PointX="9.75" PointY="44.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusProductReviews" Width="1.5" PointX="5.25" PointY="95" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusproductseries" Width="1.5" PointX="5.25" PointY="71.125" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusproductseriesLog" Width="1.5" PointX="11.75" PointY="44.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusProductThemacode" Width="1.5" PointX="8.25" PointY="71.125" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusProductThemacodeLog" Width="1.5" PointX="13.75" PointY="44.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusroles" Width="1.5" PointX="3" PointY="87.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusrolesLog" Width="1.5" PointX="15.75" PointY="44.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusserieAreas" Width="1.5" PointX="5.25" PointY="86.375" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusSerieCategories" Width="1.5" PointX="11.25" PointY="68.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusSerieCategoriesLog" Width="1.5" PointX="29.75" PointY="44.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusseries" Width="1.5" PointX="3" PointY="80.375" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusseriesLevel" Width="1.5" PointX="11.25" PointY="72" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusseriesLevelLog" Width="1.5" PointX="31.75" PointY="44.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusseriesLog" Width="1.5" PointX="45.75" PointY="0.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusserieSubAreas" Width="1.5" PointX="5.25" PointY="83.5" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusserieSubjects" Width="1.5" PointX="5.25" PointY="111.125" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusThemacode" Width="1.5" PointX="6" PointY="78.875" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusThemacodeLog" Width="1.5" PointX="46.75" PointY="38.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPluswork" Width="1.5" PointX="0.75" PointY="70.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusWorkLog" Width="1.5" PointX="46.75" PointY="45.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusproductauthors" Width="1.5" PointX="8.25" PointY="67.375" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GPlusproductauthors_GPlusauthors" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_Bundle_GPlusBundle" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GPlusBundleMembership_GPlusBundle" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GPluslevel_GPlusCategory" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GPlusProductCategories_GPlusCategory" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GPlusSerieCategories_DEA_KDWS_GPluscategory" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_GPlusseriesLevel_fkey_GPluslevel" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GPlusProductLevels_GPluslevel" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GPlusproductcontributors_GPlusroles" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_serier_fkey_serie_GPlus" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_themacode_fkey_themacode_GPlus" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_GPlusserieArea_fkey_GPlusseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GPlusSerieCategories_DEA_KDWS_GPlusseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_GPlusseriesLevel_fkey_GPlusseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_GPlusserieSubAreas_fkey_GPlusseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_GPlusserieSubject_fkey_GPlusseries" />
+        <AssociationConnector Association="koncerndata_webshops_Model.serier_fkey_parent_GPlus" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlus_LevelCategoriesView" Width="1.5" PointX="11.375" PointY="47.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlus_BundleCategoriesView" Width="1.5" PointX="40.375" PointY="32.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlus_ProductCategoriesView" Width="1.5" PointX="42.375" PointY="32.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlus_ConsolidatedProdLogView" Width="1.5" PointX="13.375" PointY="47.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKContributorsLog" Width="1.5" PointX="15.375" PointY="47.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKproductcontributorsLog" Width="1.5" PointX="29.375" PointY="47.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusContributors" Width="1.5" PointX="44.375" PointY="28" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GPlusproductcontributors_GPlusContributors" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_Ekeyproduct" Width="1.5" PointX="46.375" PointY="15.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKProduct" Width="1.5" PointX="35.5" PointY="45" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GUproduct" Width="1.5" PointX="16" PointY="50.875" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_HRproduct" Width="1.5" PointX="3" PointY="44" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_MUNKproduct" Width="1.5" PointX="24" PointY="58" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GDKattachments_GDKproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_Bundle_GDKProduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_GDKProductReviews_fkey_vare" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GDKproductcontributors_GDKproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GDKVareforfatter_GDKVare" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GDKvarework_GDKWork" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_serier_fkey_vare_GDK" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_themacode_fkey_vare_GDK" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GUattachments_GUproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_Bundle_GUProduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_GUProductReviews_fkey_vare" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GUproductauthors_GUproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GUProductCategories_GUProduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GUproductcontributors_GUproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GUProductLevels_GUproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GUproductwork_GUWork" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_serier_fkey_vare_gu" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_themacode_fkey_vare_GU" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_HRattachments_HRproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_Bundle_HRProduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_HRProductReviews_fkey_vare" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_HRproductauthors_HRproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_HRProductCategories_HRProduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_HRproductcontributors_HRproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_HRProductLevels_HRproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_HRproductwork_HRWork" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_serier_fkey_vare_hr" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_themacode_fkey_vare_HR" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_MUNKattachments_MUNKproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_Bundle_MUNKProduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_MUNKProductReviews_fkey_vare" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_MUNKproductauthors_MUNKproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_MUNKProductCategories_MUNKProduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_MUNKproductcontributors_MUNKproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_MUNKProductLevels_MUNKproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_MUNKproductwork_MUNKWork" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_serier_fkey_vare_MUNK" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_themacode_fkey_vare_MUNK" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlusproduct" Width="1.5" PointX="3" PointY="65.375" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GPlusattachments_GPlusproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_Bundle_GPlusProduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.DEA_KDWS_GPlusProductReviews_fkey_vare" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GPlusproductauthors_GPlusproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GPlusProductCategories_GPlusProduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GPlusproductcontributors_GPlusproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GPlusProductLevels_GPlusproduct" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK_DEA_KDWS_GPlusproductwork_GPlusWork" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_serier_fkey_vare_GPlus" />
+        <AssociationConnector Association="koncerndata_webshops_Model.vare_themacode_fkey_vare_GPlus" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_3rdPartyContributorsLog" Width="1.5" PointX="0.75" PointY="10.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDK_ConsolidatedContributorsLogView" Width="1.5" PointX="14.75" PointY="9.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GPlus_ConsolidatedContributorsLogView" Width="1.5" PointX="0.75" PointY="18.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GGA_Forfatter" Width="1.5" PointX="15.375" PointY="18.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GGA_Vare" Width="1.5" PointX="7.375" PointY="32.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GGA_Vare_Forfatter" Width="1.5" PointX="23.375" PointY="17.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKPresse_Forfatter" Width="1.5" PointX="7.375" PointY="37.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKPresse_Kategori" Width="1.5" PointX="7.375" PointY="41.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKPresse_Vare" Width="1.5" PointX="46.375" PointY="28.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKPresse_Materiale" Width="1.5" PointX="20.375" PointY="45.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKPresse_VareForfatter" Width="1.5" PointX="43.375" PointY="21.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.DEA_KDWS_GDKPresse_VareKategorier" Width="1.5" PointX="45.375" PointY="35.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.work" Width="1.5" PointX="47.375" PointY="3.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.workProduct" Width="1.5" PointX="47.375" PointY="7.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.pakker" Width="1.5" PointX="47.375" PointY="10.75" />
+        <EntityTypeShape EntityType="koncerndata_webshops_Model.portersitekategorier" Width="1.5" PointX="3" PointY="18.875" />
+        <AssociationConnector Association="koncerndata_webshops_Model.FK__portersit__Varer__557DBB57" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

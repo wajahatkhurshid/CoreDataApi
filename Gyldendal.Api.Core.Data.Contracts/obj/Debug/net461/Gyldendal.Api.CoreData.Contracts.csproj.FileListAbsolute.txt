@@ -1,0 +1,16 @@
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\bin\Debug\net461\Gyldendal.Api.CoreData.Contracts.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\bin\Debug\net461\Gyldendal.Api.CoreData.Contracts.pdb
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\bin\Debug\net461\Gyldendal.AccessServices.Contracts.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\bin\Debug\net461\Newtonsoft.Json.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\bin\Debug\net461\System.Net.Http.Formatting.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\bin\Debug\net461\Gyldendal.Api.CommonContracts.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\bin\Debug\net461\Gyldendal.Api.ShopServices.Contracts.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\bin\Debug\net461\Gyldendal.Common.WebUtils.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\obj\Debug\net461\Gyldendal.Api.CoreData.Contracts.AssemblyInfoInputs.cache
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\obj\Debug\net461\Gyldendal.Api.CoreData.Contracts.AssemblyInfo.cs
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\obj\Debug\net461\Gyldendal.Api.CoreData.Contracts.csproj.CoreCompileInputs.cache
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\obj\Debug\net461\Gyldendal.Api.CoreData.Contracts.csproj.CopyComplete
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\obj\Debug\net461\Gyldendal.Api.CoreData.Contracts.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\obj\Debug\net461\Gyldendal.Api.CoreData.Contracts.pdb
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\obj\Debug\net461\Gyldendal.Api.CoreData.Contracts.csproj.AssemblyReference.cache
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.Contracts\bin\Debug\net461\System.ComponentModel.Annotations.dll

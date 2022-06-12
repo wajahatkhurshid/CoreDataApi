@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\ProjectProperties.props" />
+  <ItemGroup>
+    <Content Remove="C:\Users\al-aas.ahmed\.nuget\packages\gyldendal.loggingmanager\2.2.7\contentFiles\any\net462\NLog.config" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Gyldendal.Api.Core.Data.Business\Gyldendal.Api.CoreData.Business.csproj" />
+    <ProjectReference Include="..\Gyldendal.Api.Core.Data.Common\Gyldendal.Api.CoreData.Common.csproj" />
+    <ProjectReference Include="..\Gyldendal.Api.CoreData.ContentfulProxy\Gyldendal.Api.CoreData.ContentfulProxy.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+</Project>

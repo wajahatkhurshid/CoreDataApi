@@ -1,0 +1,17 @@
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\bin\Debug\Gyldendal.Api.CoreData.ShopAdmin.dll.config
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\bin\Debug\Gyldendal.Api.CoreData.ShopAdmin.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\bin\Debug\Gyldendal.Api.CoreData.ShopAdmin.pdb
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\bin\Debug\EntityFramework.SqlServer.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\bin\Debug\EntityFramework.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\bin\Debug\Gyldendal.Api.CoreData.DataAccess.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\bin\Debug\Gyldendal.Api.CoreData.Contracts.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\bin\Debug\Gyldendal.Api.CommonContracts.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\bin\Debug\Gyldendal.Api.CoreData.DataAccess.pdb
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\bin\Debug\Gyldendal.Api.CoreData.DataAccess.dll.config
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\obj\Debug\Gyldendal.Api.CoreData.ShopAdmin.csproj.AssemblyReference.cache
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\obj\Debug\Gyldendal.Api.CoreData.ShopAdmin.AssemblyInfoInputs.cache
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\obj\Debug\Gyldendal.Api.CoreData.ShopAdmin.AssemblyInfo.cs
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\obj\Debug\Gyldendal.Api.CoreData.ShopAdmin.csproj.CoreCompileInputs.cache
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\obj\Debug\Gyldendal.Api.CoreData.ShopAdmin.csproj.CopyComplete
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\obj\Debug\Gyldendal.Api.CoreData.ShopAdmin.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.ShopAdmin\obj\Debug\Gyldendal.Api.CoreData.ShopAdmin.pdb

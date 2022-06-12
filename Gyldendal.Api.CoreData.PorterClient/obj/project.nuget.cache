@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "1Ux/EE2eFRPUMxUvUkiuVxJLT/pNTcRs51ZJan3slXLtgDpUtnjADGQUXDqBUR4PpFOlnwU5WavEggYZvvxhFQ==",
+  "success": true,
+  "projectFilePath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.PorterClient\\Gyldendal.Api.CoreData.PorterClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\microsoft.extensions.apidescription.client\\3.0.0\\microsoft.extensions.apidescription.client.3.0.0.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\nswag.apidescription.client\\13.0.5\\nswag.apidescription.client.13.0.5.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\nswag.msbuild\\13.0.5\\nswag.msbuild.13.0.5.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,11 @@
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldenal.Api.Core.Data.Gql.Common\bin\Debug\Gyldendal.Api.CoreData.Gql.Common.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldenal.Api.Core.Data.Gql.Common\bin\Debug\Gyldendal.Api.CoreData.Gql.Common.pdb
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldenal.Api.Core.Data.Gql.Common\bin\Debug\NewRelic.Api.Agent.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldenal.Api.Core.Data.Gql.Common\bin\Debug\Irony.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldenal.Api.Core.Data.Gql.Common\obj\Debug\Gyldendal.Api.CoreData.Gql.Common.AssemblyInfoInputs.cache
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldenal.Api.Core.Data.Gql.Common\obj\Debug\Gyldendal.Api.CoreData.Gql.Common.AssemblyInfo.cs
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldenal.Api.Core.Data.Gql.Common\obj\Debug\Gyldendal.Api.CoreData.Gql.Common.csproj.CoreCompileInputs.cache
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldenal.Api.Core.Data.Gql.Common\obj\Debug\Gyldendal.Api.CoreData.Gql.Common.csproj.CopyComplete
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldenal.Api.Core.Data.Gql.Common\obj\Debug\Gyldendal.Api.CoreData.Gql.Common.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldenal.Api.Core.Data.Gql.Common\obj\Debug\Gyldendal.Api.CoreData.Gql.Common.pdb
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldenal.Api.Core.Data.Gql.Common\obj\Debug\Gyldendal.Api.CoreData.Gql.Common.csproj.AssemblyReference.cache

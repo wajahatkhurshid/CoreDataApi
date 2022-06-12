@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\ProjectProperties.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gyldendal.Api.Core.Data.Business\Gyldendal.Api.CoreData.Business.csproj" />
+    <ProjectReference Include="..\Gyldendal.Api.Core.Data.SolrRepositories\Gyldendal.Api.CoreData.SolrDataProviders.csproj" />
+    <ProjectReference Include="..\Gyldendal.Api.CoreData.EventProcessor\Gyldendal.Api.CoreData.EventProcessor.csproj" />
+    <ProjectReference Include="..\Gyldendal.Api.CoreData.PorterClient\Gyldendal.Api.CoreData.PorterClient.csproj" />
+    <ProjectReference Include="..\Gyldendal.Api.CoreData.ResultsPostProcessing\Gyldendal.Api.CoreData.ResultsPostProcessing.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="SimpleInjector" version="3.2.4" />
+    <PackageReference Include="SimpleInjector.Extensions.ExecutionContextScoping" version="3.2.4" />
+    <PackageReference Include="SimpleInjector.Integration.WebApi" version="3.2.4" />
+  </ItemGroup>
+</Project>

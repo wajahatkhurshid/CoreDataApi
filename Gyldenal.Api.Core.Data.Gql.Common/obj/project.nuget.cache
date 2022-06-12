@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aeE2aMoU48Uzci7ddQK97K0ebGbH9nkMe8SYqnxW8WB+pxE4/U3xcNPPxOMMcnENXn1D6uP2kclrNNJXihR/9A==",
+  "success": true,
+  "projectFilePath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldenal.Api.Core.Data.Gql.Common\\Gyldendal.Api.CoreData.Gql.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\newrelic.agent.api\\8.21.34\\newrelic.agent.api.8.21.34.nupkg.sha512"
+  ],
+  "logs": []
+}

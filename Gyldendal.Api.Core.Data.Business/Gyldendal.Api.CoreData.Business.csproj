@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\ProjectProperties.props" />
+
+  <ItemGroup>
+    <Compile Remove="Processors\**" />
+    <Compile Remove="Repositories\RosinanteCo\**" />
+    <EmbeddedResource Remove="Processors\**" />
+    <EmbeddedResource Remove="Repositories\RosinanteCo\**" />
+    <None Remove="Processors\**" />
+    <None Remove="Repositories\RosinanteCo\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Gyldendal.Api.Core.Contracts" version="1.7.9" />
+    <PackageReference Include="Gyldendal.Api.ShopServices.ApiClient" version="1.6.4" />
+    <PackageReference Include="Gyldendal.PulsenServices.ApiClient" version="2.5.1" />
+    <PackageReference Include="TidyHtml5Managed" version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gyldendal.Api.Core.Data.Common\Gyldendal.Api.CoreData.Common.csproj" />
+    <ProjectReference Include="..\Gyldendal.Api.CoreData.ContentfulProxy\Gyldendal.Api.CoreData.ContentfulProxy.csproj" />
+    <ProjectReference Include="..\Gyldendal.Api.CoreData.PorterClient\Gyldendal.Api.CoreData.PorterClient.csproj" />
+    <ProjectReference Include="..\Gyldendal.Api.CoreData.ShopAdmin\Gyldendal.Api.CoreData.ShopAdmin.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+</Project>

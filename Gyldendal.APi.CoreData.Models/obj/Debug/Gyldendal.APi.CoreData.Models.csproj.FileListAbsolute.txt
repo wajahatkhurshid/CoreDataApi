@@ -1,0 +1,8 @@
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.APi.CoreData.Models\bin\Debug\Gyldendal.APi.CoreData.Models.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.APi.CoreData.Models\bin\Debug\Gyldendal.APi.CoreData.Models.pdb
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.APi.CoreData.Models\obj\Debug\Gyldendal.APi.CoreData.Models.csproj.AssemblyReference.cache
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.APi.CoreData.Models\obj\Debug\Gyldendal.APi.CoreData.Models.AssemblyInfoInputs.cache
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.APi.CoreData.Models\obj\Debug\Gyldendal.APi.CoreData.Models.AssemblyInfo.cs
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.APi.CoreData.Models\obj\Debug\Gyldendal.APi.CoreData.Models.csproj.CoreCompileInputs.cache
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.APi.CoreData.Models\obj\Debug\Gyldendal.APi.CoreData.Models.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.APi.CoreData.Models\obj\Debug\Gyldendal.APi.CoreData.Models.pdb

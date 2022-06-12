@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "OLxGLBSamIBzzgjpxB73IkMYfLYgiFz+GJFqVXaMVAZq7sjZD5cSCSS2HFFr8rvWhjIPoV/kBiTQ3EHkDVdEWA==",
+  "success": true,
+  "projectFilePath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.SolrContracts.ClubPeriod\\Gyldendal.Api.CoreData.SolrContracts.ClubPeriod.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\commonservicelocator\\2.0.2\\commonservicelocator.2.0.2.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\newtonsoft.json\\10.0.3\\newtonsoft.json.10.0.3.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\solrnet\\1.0.19\\solrnet.1.0.19.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\solrnet.core\\1.0.19\\solrnet.core.1.0.19.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\system.valuetuple\\4.4.0\\system.valuetuple.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

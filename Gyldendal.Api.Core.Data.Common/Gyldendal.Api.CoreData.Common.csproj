@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\ProjectProperties.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" version="6.1.3" />
+    <PackageReference Include="Gyldendal.Api.CommonContracts" Version="1.8.6" />
+    <PackageReference Include="Gyldendal.Api.Core.Contracts" version="1.7.9" />
+    <PackageReference Include="Gyldendal.LoggingManager" Version="2.4.1" />
+    <PackageReference Include="NewRelic.Agent.Api" Version="8.21.34" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gyldendal.APi.CoreData.Models\Gyldendal.APi.CoreData.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+
+</Project>

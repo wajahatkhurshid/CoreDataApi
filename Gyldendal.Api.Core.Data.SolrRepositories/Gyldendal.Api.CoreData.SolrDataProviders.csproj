@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\ProjectProperties.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gyldendal.Api.Core.Data.Business\Gyldendal.Api.CoreData.Business.csproj" />
+    <ProjectReference Include="..\Gyldendal.Api.Core.Data.GqlParsing\Gyldendal.Api.CoreData.GqlValidator.csproj" />
+    <ProjectReference Include="..\Gyldendal.Api.Core.Data.GqlToSolrConnector\Gyldendal.Api.CoreData.GqlToSolrConnector.csproj" />
+    <ProjectReference Include="..\Gyldendal.Api.CoreData.SolrDataProviders.Infrastructure\Gyldendal.Api.CoreData.SolrDataProviders.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Irony">
+      <HintPath>..\..\Dependencies\Irony.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "GFrJuZiVhIKbsdTieeDLsdm5bkp+U9K0nUjwBRt+Xz3aUTDXvnMT9LWCNGBn7xfwLZ8sNpaObWr0IdXQEs1Avg==",
+  "success": true,
+  "projectFilePath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ApiClient\\Gyldendal.Api.CoreData.ApiClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\gyldendal.accessservices.contracts\\1.5.1.3\\gyldendal.accessservices.contracts.1.5.1.3.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\gyldendal.api.commoncontracts\\1.8.6\\gyldendal.api.commoncontracts.1.8.6.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\gyldendal.api.core.contracts\\1.7.9\\gyldendal.api.core.contracts.1.7.9.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\gyldendal.api.shopservices.contracts\\1.6.4\\gyldendal.api.shopservices.contracts.1.6.4.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\gyldendal.common.webutils\\2.3.1.13\\gyldendal.common.webutils.2.3.1.13.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.3\\microsoft.aspnet.webapi.client.5.2.3.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\newtonsoft.json\\10.0.3\\newtonsoft.json.10.0.3.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\system.componentmodel.annotations\\4.6.0\\system.componentmodel.annotations.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

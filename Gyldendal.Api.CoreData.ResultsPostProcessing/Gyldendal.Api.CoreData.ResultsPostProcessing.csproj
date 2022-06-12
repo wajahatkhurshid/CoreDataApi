@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\ProjectProperties.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gyldendal.Api.Core.Data.Business\Gyldendal.Api.CoreData.Business.csproj" />
+  </ItemGroup>
+</Project>

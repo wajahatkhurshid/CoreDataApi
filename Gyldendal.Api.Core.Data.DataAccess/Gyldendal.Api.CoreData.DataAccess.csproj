@@ -1,0 +1,1050 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA210179-A642-4395-89BD-0DE9FEE2AAA5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gyldendal.Api.CoreData.DataAccess</RootNamespace>
+    <AssemblyName>Gyldendal.Api.CoreData.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Gyldendal.AccessServices.Contracts, Version=1.5.1.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Gyldendal.AccessServices.Contracts.1.5.1.4\lib\net461\Gyldendal.AccessServices.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Gyldendal.Api.CommonContracts, Version=1.8.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Gyldendal.Api.CommonContracts.1.8.6\lib\net461\Gyldendal.Api.CommonContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Gyldendal.Api.CoreData.Contracts, Version=1.7.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Gyldendal.Api.Core.Contracts.1.7.9\lib\net461\Gyldendal.Api.CoreData.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Gyldendal.Api.ShopServices.Contracts, Version=1.6.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Gyldendal.Api.ShopServices.Contracts.1.6.5\lib\net461\Gyldendal.Api.ShopServices.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Gyldendal.Common.WebUtils, Version=2.3.1.13, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Gyldendal.Common.WebUtils.2.3.1.13\lib\net451\Gyldendal.Common.WebUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=3.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.3.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=3.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.3.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=3.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.3.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=3.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.3.0.1\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.0.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Http, Version=3.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Http.3.0.1\lib\netstandard2.0\Microsoft.Extensions.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=3.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.3.0.1\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.3.0.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=3.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.3.0.1\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.3.0.1\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.6.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.2\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="KoncernData\Campaign.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\CampaignItem.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\ConsolidatedContributorLogView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\ConsolidatedContributorView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\ConsolidatedProductContributorView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\ConsolidatedWorkReviewLogView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\ConsolidatedWorkReviewView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_3rdPartyContributorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_Ekeyproduct.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_Ekey_ConsolidatedProdLogView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKattachments.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKattachmentsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKauthors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKBundle.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKBundleLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKBundleMembership.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKBundle_Products.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKBundle_ProductsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKcategory.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKContributors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKContributorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKPresse_Forfatter.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKPresse_Kategori.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKPresse_Materiale.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKPresse_Vare.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKPresse_VareForfatter.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKPresse_VareKategorier.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKProduct.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKproductauthors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKproductcontributors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKproductcontributorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKProductReviews.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKproductseries.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKProductThemacode.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKProductThemacodeLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKroles.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKSerieCategories.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKSerieCategoriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKseries.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKThemacode.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKThemacodeLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKWork.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKWorkLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKWorkReview.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDKWorkReviewLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDK_BundleCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDK_ConsolidatedContributorsLogView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDK_ConsolidatedProdLogView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDK_ProductCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GDK_SerieCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\CampaignMembership.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GGA_Forfatter.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GGA_Vare.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GGA_Vare_Forfatter.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusattachments.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusattachmentsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusauthors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusauthorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusBundle.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusBundleLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusBundleMembership.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusBundleMembershipLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusBundle_Products.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusBundle_ProductsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPluscategory.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPluscategoryLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusContributors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusContributorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPluslevel.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPluslevelLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusmaterialtype.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusmedietype.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusproduct.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusproductauthors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusproductauthorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusProductCategories.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusProductCategoriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusproductcontributors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusproductcontributorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusProductLevels.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusProductLevelsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusproductLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusProductReviews.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusproductseries.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusproductseriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusProductThemacode.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusProductThemacodeLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusroles.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusrolesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusserieAreas.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusSerieCategories.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusSerieCategoriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusseries.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusseriesLevel.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusseriesLevelLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusseriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusserieSubAreas.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusserieSubjects.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusThemacode.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusThemacodeLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPluswork.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlusWorkLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlus_BundleCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlus_ConsolidatedContributorsLogView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlus_ConsolidatedProdLogView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlus_LevelCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GPlus_ProductCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUattachments.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUauthors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUauthorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUBundle.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUBundleMembership.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUBundle_Products.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUcategory.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUcategoryLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUContributors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUContributorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUlevel.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUlevelLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUmaterialtype.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUmedietype.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUproduct.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUproductauthors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUproductauthorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUProductCategories.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUProductCategoriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUproductcontributors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUproductcontributorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUProductLevels.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUProductLevelsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUproductLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUProductReviews.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUproductseries.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUproductseriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUProductThemacode.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUProductThemacodeLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUroles.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUrolesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUserieAreas.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUSerieCategories.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUSerieCategoriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUseries.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUseriesLevel.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUseriesLevelLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUseriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUserieSubAreas.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUserieSubjects.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUThemacode.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUThemacodeLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUwork.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GUWorkLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GU_BundleCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GU_ConsolidatedProdLogView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GU_LevelCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GU_ProdLogView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GU_ProductCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GU_SerieCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GyldendalGDkWork.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_GyldendalGDKWorkReview.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRattachments.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRauthors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRauthorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRBundle.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRBundleMembership.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRBundle_Products.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRcategory.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRcategoryLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRContributors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRContributorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRlevel.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRlevelLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRmaterialtype.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRmedietype.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRproduct.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRproductauthors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRproductauthorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRProductCategories.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRProductCategoriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRproductcontributors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRproductcontributorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRProductLevels.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRProductLevelsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRproductLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRProductReviews.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRproductseries.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRproductseriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRProductThemacode.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRProductThemacodeLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRroles.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRrolesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRserieAreas.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRSerieCategories.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRSerieCategoriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRseries.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRseriesLevel.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRseriesLevelLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRseriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRserieSubAreas.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRserieSubjects.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRThemacode.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRThemacodeLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRwork.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HRWorkLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HR_BundleCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HR_ConsolidatedProdLogView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HR_LevelCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HR_ProdLogView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HR_ProductCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_HR_SerieCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKattachments.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKauthors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKauthorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKBundle.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKBundleMembership.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKBundle_Products.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKcategory.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKcategoryLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKContributors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKContributorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKlevel.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKlevelLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKmaterialtype.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKmedietype.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKproduct.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKproductauthors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKproductauthorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKProductCategories.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKProductCategoriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKproductcontributors.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKproductcontributorsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKProductLevels.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKProductLevelsLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKproductLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKProductReviews.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKproductseries.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKproductseriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKProductThemacode.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKProductThemacodeLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKroles.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKrolesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKserieAreas.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKSerieCategories.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKSerieCategoriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKseries.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKseriesLevel.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKseriesLevelLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKseriesLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKserieSubAreas.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKserieSubjects.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKThemacode.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKThemacodeLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKwork.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNKWorkLog.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNK_BundleCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNK_ConsolidatedProdLogView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_Munk_LevelCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNK_ProdLogView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNK_ProductCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_MUNK_SerieCategoriesView.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_ROSforfatter.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_ROShierarki.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_ROSillustrator.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_ROSpressForfatter.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_ROSpressMateriale.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_ROSpressVare.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_ROSpublisher.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_ROSvare.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_ROSwork.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\DEA_KDWS_Semaphores.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\KD.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KD.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\KD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\KD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KD.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\pakker.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\portersitekategorier.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\work.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\workProduct.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="KoncernData\supplerende_materialer.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KoncernData\varer.cs">
+      <DependentUpon>KD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShopAdmin\Category.cs">
+      <DependentUpon>ShopAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShopAdmin\PublizonMetadata.cs">
+      <DependentUpon>ShopAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShopAdmin\ShopAdmin.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShopAdmin.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShopAdmin\ShopAdmin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShopAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShopAdmin\ShopAdmin.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShopAdmin.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="StaticLookups\Countries.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Countries.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="KoncernData\KD.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>KD.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="KoncernData\KD.edmx.diagram">
+      <DependentUpon>KD.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="ShopAdmin\ShopAdmin.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ShopAdmin.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="packages.config" />
+    <None Include="ShopAdmin\ShopAdmin.edmx.diagram">
+      <DependentUpon>ShopAdmin.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="KoncernData\KD.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>KD.edmx</DependentUpon>
+      <LastGenOutput>KD.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="KoncernData\KD.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>KD.edmx</DependentUpon>
+      <LastGenOutput>KD.cs</LastGenOutput>
+    </Content>
+    <Content Include="ShopAdmin\ShopAdmin.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ShopAdmin.edmx</DependentUpon>
+      <LastGenOutput>ShopAdmin.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ShopAdmin\ShopAdmin.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ShopAdmin.edmx</DependentUpon>
+      <LastGenOutput>ShopAdmin.cs</LastGenOutput>
+    </Content>
+    <Content Include="StaticLookups\Countries.txt" />
+    <Content Include="StaticLookups\Countries.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Countries.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

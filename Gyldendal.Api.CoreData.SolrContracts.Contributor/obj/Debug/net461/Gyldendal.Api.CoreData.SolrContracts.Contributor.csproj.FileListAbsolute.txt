@@ -1,0 +1,15 @@
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.SolrContracts.Contributor\bin\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.Contributor.dll.config
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.SolrContracts.Contributor\bin\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.Contributor.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.SolrContracts.Contributor\bin\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.Contributor.pdb
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.SolrContracts.Contributor\bin\Debug\net461\CommonServiceLocator.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.SolrContracts.Contributor\bin\Debug\net461\Newtonsoft.Json.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.SolrContracts.Contributor\bin\Debug\net461\CommonServiceLocator.SolrNet.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.SolrContracts.Contributor\bin\Debug\net461\SolrNet.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.SolrContracts.Contributor\bin\Debug\net461\System.ValueTuple.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.SolrContracts.Contributor\obj\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.Contributor.csproj.AssemblyReference.cache
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.SolrContracts.Contributor\obj\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.Contributor.AssemblyInfoInputs.cache
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.SolrContracts.Contributor\obj\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.Contributor.AssemblyInfo.cs
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.SolrContracts.Contributor\obj\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.Contributor.csproj.CoreCompileInputs.cache
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.SolrContracts.Contributor\obj\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.Contributor.csproj.CopyComplete
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.SolrContracts.Contributor\obj\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.Contributor.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.CoreData.SolrContracts.Contributor\obj\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.Contributor.pdb

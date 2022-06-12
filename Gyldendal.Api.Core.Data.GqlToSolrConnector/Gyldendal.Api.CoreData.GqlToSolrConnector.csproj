@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\ProjectProperties.props" />
+
+  <ItemGroup>
+    <PackageReference Include="Gyldendal.Api.Core.Contracts" version="1.7.9" />
+    <PackageReference Include="Gyldendal.Api.CoreData.SolrContracts" Version="2.3.3" />
+    <PackageReference Include="Gyldendal.Api.CoreData.SolrContracts.ClubPeriod" Version="2.0.1" />
+    <PackageReference Include="Gyldendal.Api.CoreData.SolrContracts.Contributor" Version="2.0.4" />
+    <PackageReference Include="Gyldendal.Api.CoreData.SolrContracts.WorkReview" Version="2.0.5" />
+    <PackageReference Include="Gyldendal.Utilities" Version="1.1.1" />
+    <PackageReference Include="SolrNet" version="1.0.19" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gyldenal.Api.Core.Data.Gql.Common\Gyldendal.Api.CoreData.Gql.Common.csproj" />
+    <ProjectReference Include="..\Gyldendal.Api.Core.Data.Common\Gyldendal.Api.CoreData.Common.csproj" />
+    <ProjectReference Include="..\Gyldendal.Api.Core.Data.GqlParsing\Gyldendal.Api.CoreData.GqlValidator.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Irony">
+      <HintPath>..\..\Dependencies\Irony.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="QueryParsingV3\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,249 @@
+// Countries list taken from: http://www.nationsonline.org/oneworld/country_code_list.htm Danish Names were added later.
+Name	Danish Name	Alpha2Code	Alpha3Code
+Afghanistan	Afghanistan 	AF	AFG
+Aland Islands	Åland	AX	ALA
+Albania	Albanien 	AL	ALB
+Algeria	Algeriet 	DZ	DZA
+American Samoa	Amerikansk Samoa	AS	ASM
+Andorra	Andorra 	AD	AND
+Angola	Angola 	AO	AGO
+Anguilla	Anguilla	AI	AIA
+Antarctica	Antarktis	AQ	ATA
+Antigua and Barbuda	Antigua &Barbuda 	AG	ATG
+Argentina	Argentina 	AR	ARG
+Armenia	Armenien 	AM	ARM
+Aruba	Aruba	AW	ABW
+Australia	Australien 	AU	AUS
+Austria	Østrig 	AT	AUT
+Azerbaijan	Aserbajdsjan 	AZ	AZE
+Bahamas	Bahamas 	BS	BHS
+Bahrain	Bahrain 	BH	BHR
+Bangladesh	Bangladesh 	BD	BGD
+Barbados	Barbados 	BB	BRB
+Belarus	Hviderusland	BY	BLR
+Belgium	Belgien 	BE	BEL
+Belize	Belize 	BZ	BLZ
+Benin	Benin 	BJ	BEN
+Bermuda	Bermuda	BM	BMU
+Bhutan	Bhutan 	BT	BTN
+Bolivia	Bolivia 	BO	BOL
+Bosnia and Herzegovina	Bosnien-Herzegovina 	BA	BIH
+Botswana	Botswana 	BW	BWA
+Bouvet Island	Bouvetøen	BV	BVT
+Brazil	Brasilien 	BR	BRA
+British Indian Ocean Territory	Det britiske territorium i Det Indiske Ocean	IO	IOT
+British Virgin Islands	De britiske jomfruøerne	VG	VGB
+Brunei Darussalam	Brunei 	BN	BRN
+Bulgaria	Bulgarien 	BG	BGR
+Burkina Faso	Burkina Faso 	BF	BFA
+Burundi	Burundi 	BI	BDI
+CÃ´te d'Ivoire	Elfenbenskysten 	CI	CIV
+Cambodia	Cambodja 	KH	KHM
+Cameroon	Cameroun 	CM	CMR
+Canada	Canada 	CA	CAN
+Cape Verde	Kapverdiske Øer 	CV	CPV
+Cayman Islands 	Caymanøerne	KY	CYM
+Central African Republic	Centralafrika 	CF	CAF
+Chad	Chad 	TD	TCD
+Chile	Chile 	CL	CHL
+China	Kina 	CN	CHN
+Christmas Island	Juleøen	CX	CXR
+Cocos (Keeling) Islands	Cocosøerne	CC	CCK
+Colombia	Colombia 	CO	COL
+Comoros	Comorerne 	KM	COM
+Congo (Brazzaville)	Congo 	CG	COG
+"Congo, (Kinshasa)"	Demokratiske republik Congo 	CD	COD
+Cook Islands 	Cookøerne	CK	COK
+Costa Rica	Costa Rica 	CR	CRI
+Croatia	Kroatien 	HR	HRV
+Cuba	Cuba 	CU	CUB
+Cyprus	Cypern 	CY	CYP
+Czech Republic	Tjekkiet 	CZ	CZE
+Denmark	Danmark	DK	DNK
+Djibouti	Djibouti 	DJ	DJI
+Dominica	Dominica 	DM	DMA
+Dominican Republic	Dominikanske Republik 	DO	DOM
+Ecuador	Ecuador 	EC	ECU
+Egypt	Egypten 	EG	EGY
+El Salvador	El Salvador 	SV	SLV
+Equatorial Guinea	Ækvatorial Guinea 	GQ	GNQ
+Eritrea	Eritrea 	ER	ERI
+Estonia	Estland 	EE	EST
+Ethiopia	Etiopien 	ET	ETH
+Falkland Islands (Malvinas) 	Fiji 	FK	FLK
+Faroe Islands	Færøerne	FO	FRO
+Fiji	Fijiøerne	FJ	FJI
+Finland	Finland 	FI	FIN
+France	Frankrig 	FR	FRA
+French Guiana	Fransk Guinea	GF	GUF
+French Polynesia	Fransk Polynesien	PF	PYF
+French Southern Territories	Franske Sydlige og Antarktiske Territorier	TF	ATF
+Gabon	Gabon 	GA	GAB
+Gambia	Gambia 	GM	GMB
+Georgia	Georgien 	GE	GEO
+Germany	Tyskland	DE	DEU
+Ghana	Ghana 	GH	GHA
+Gibraltar 	Gibraltar	GI	GIB
+Greece	Grækenland 	GR	GRC
+Greenland	Grønland	GL	GRL
+Grenada	Grenada 	GD	GRD
+Guadeloupe	Grenadinerne 	GP	GLP
+Guam	Guam	GU	GUM
+Guatemala	Guatemala 	GT	GTM
+Guernsey	Guernsey	GG	GGY
+Guinea	Guinea 	GN	GIN
+Guinea-Bissau	Guinea-Bissau 	GW	GNB
+Guyana	Guyana 	GY	GUY
+Haiti	Haiti 	HT	HTI
+Heard and Mcdonald Islands	Heard- og Mcdonaldøerne	HM	HMD
+Holy See (Vatican City State)	Vatikanet	VA	VAT
+Honduras	Honduras 	HN	HND
+"Hong Kong, SAR China"	Hong Kong	HK	HKG
+Hungary	Ungarn	HU	HUN
+Iceland	Island 	IS	ISL
+India	Indien 	IN	IND
+Indonesia	Indonesien 	ID	IDN
+"Iran, Islamic Republic of"	Iran	IR	IRN
+Iraq	Irak 	IQ	IRQ
+Ireland	Irland 	IE	IRL
+Isle of Man 	Isle of Man	IM	IMN
+Israel	Israel 	IL	ISR
+Italy	Italien 	IT	ITA
+Jamaica	Jamaica 	JM	JAM
+Japan	Japan 	JP	JPN
+Jersey	Jersey	JE	JEY
+Jordan	Jordan 	JO	JOR
+Kazakhstan	Kasakhstan 	KZ	KAZ
+Kenya	Kenya 	KE	KEN
+Kiribati	Kiribati 	KI	KIR
+Korea (North)	Nordkorea	KP	PRK
+Korea (South)	Sydkorea	KR	KOR
+Kuwait	Kuwait 	KW	KWT
+Kyrgyzstan	Kirgisistan 	KG	KGZ
+Lao PDR	Laos 	LA	LAO
+Latvia	Letland 	LV	LVA
+Lebanon	Libanon 	LB	LBN
+Lesotho	Lesotho 	LS	LSO
+Liberia	Liberia 	LR	LBR
+Libya	Libyen 	LY	LBY
+Liechtenstein	Liechtenstein 	LI	LIE
+Lithuania	Litauen 	LT	LTU
+Luxembourg	Luxembourg 	LU	LUX
+"Macao, SAR China"	Macau	MO	MAC
+"Macedonia, Republic of"	Makedonien (FYROM) 	MK	MKD
+Madagascar	Madagaskar 	MG	MDG
+Malawi	Malawi 	MW	MWI
+Malaysia	Malaysia 	MY	MYS
+Maldives	Maldiverne 	MV	MDV
+Mali	Mali 	ML	MLI
+Malta	Malta 	MT	MLT
+Marshall Islands	Marshall-øerne 	MH	MHL
+Martinique	Martinique	MQ	MTQ
+Mauritania	Mauretanien 	MR	MRT
+Mauritius	Mauritius 	MU	MUS
+Mayotte	Mayotte	YT	MYT
+Mexico	Mexico 	MX	MEX
+"Micronesia, Federated States of"	Mikronesien 	FM	FSM
+Moldova	Moldova 	MD	MDA
+Monaco	Monaco 	MC	MCO
+Mongolia	Mongoliet 	MN	MNG
+Montenegro	Montenegro	ME	MNE
+Montserrat	Montserrat	MS	MSR
+Morocco	Marokko 	MA	MAR
+Mozambique	Mozambique 	MZ	MOZ
+Myanmar	Myanmar 	MM	MMR
+Namibia	Namibia 	NA	NAM
+Nauru	Nauru 	NR	NRU
+Nepal	Nepal 	NP	NPL
+Netherlands	Nederlandene 	NL	NLD
+Netherlands Antilles	Antillerne	AN	ANT
+New Caledonia	Ny Kaledonien	NC	NCL
+New Zealand	New Zealand 	NZ	NZL
+Nicaragua	Nicaragua 	NI	NIC
+Niger	Niger 	NE	NER
+Nigeria	Nigeria 	NG	NGA
+Niue 	Niue	NU	NIU
+Norfolk Island	Norfolk-øen	NF	NFK
+Northern Mariana Islands	Nordmarianerne	MP	MNP
+Norway	Norge 	NO	NOR
+Oman	Oman 	OM	OMN
+Pakistan	Pakistan 	PK	PAK
+Palau	Palau 	PW	PLW
+Palestinian Territory	Palestina 	PS	PSE
+Panama	Panama 	PA	PAN
+Papua New Guinea	Papua New Guinea 	PG	PNG
+Paraguay	Paraguay 	PY	PRY
+Peru	Peru 	PE	PER
+Philippines	Filippinerne 	PH	PHL
+Pitcairn	Pitcairn	PN	PCN
+Poland	Polen 	PL	POL
+Portugal	Portugal 	PT	PRT
+Puerto Rico	Puerto Rico	PR	PRI
+Qatar	Qatar 	QA	QAT
+RÃ©union	Réunion	RE	REU
+Romania	Rumænien 	RO	ROU
+Russian Federation	Rusland 	RU	RUS
+Rwanda	Rwanda 	RW	RWA
+Saint Helena	Sankt Helena	SH	SHN
+Saint Kitts and Nevis	Sankt Kitts-Nevis 	KN	KNA
+Saint Lucia	Sankt Lucia	LC	LCA
+Saint Pierre and Miquelon 	Sankt Pierre og Miquelon	PM	SPM
+Saint Vincent and Grenadines	Sankt Vincent & Grenadinerne	VC	VCT
+Saint-BarthÃ©lemy	Sankt Barthélemy	BL	BLM
+Saint-Martin (French part)	Sankt Martin	MF	MAF
+Samoa	Samoa 	WS	WSM
+San Marino	San Marino 	SM	SMR
+Sao Tome and Principe	Sao Tomé & Principe 	ST	STP
+Saudi Arabia	Saudi Arabien 	SA	SAU
+Senegal	Senegal 	SN	SEN
+Serbia	Serbien	RS	SRB
+Seychelles	Seychellerne 	SC	SYC
+Sierra Leone	Sierra Leone 	SL	SLE
+Singapore	Singapore 	SG	SGP
+Slovakia	Slovakiet 	SK	SVK
+Slovenia	Slovenien 	SI	SVN
+Solomon Islands	Salomonøerne 	SB	SLB
+Somalia	Somalia	SO	SOM
+South Africa	Sydafrika 	ZA	ZAF
+South Georgia and the South Sandwich Islands	Falklandsøerne	GS	SGS
+South Sudan	Sydsudan	SS	SSD
+Spain	Spanien 	ES	ESP
+Sri Lanka	Sri Lanka 	LK	LKA
+Sudan	Sudan 	SD	SDN
+Suriname	Surinam 	SR	SUR
+Svalbard and Jan Mayen Islands 	Svalbard	SJ	SJM
+Swaziland	Swaziland 	SZ	SWZ
+Sweden	Sverige 	SE	SWE
+Switzerland	Schweiz 	CH	CHE
+Syrian Arab Republic (Syria)	Syrien 	SY	SYR
+"Taiwan, Republic of China"	Taiwan 	TW	TWN
+Tajikistan	Tadjikistan 	TJ	TJK
+"Tanzania, United Republic of"	Tanzania 	TZ	TZA
+Thailand	Thailand 	TH	THA
+Timor-Leste	Østtimor 	TL	TLS
+Togo	Togo 	TG	TGO
+Tokelau 	Tokelau	TK	TKL
+Tonga	Tonga 	TO	TON
+Trinidad and Tobago	Trinidad & Tobago 	TT	TTO
+Tunisia	Tunesien 	TN	TUN
+Turkey	Tyrkiet 	TR	TUR
+Turkmenistan	Turkmenistan 	TM	TKM
+Turks and Caicos Islands 	Turks- og Caicosøerne	TC	TCA
+Tuvalu	Tuvalu 	TV	TUV
+Uganda	Uganda 	UG	UGA
+Ukraine	Ukraine 	UA	UKR
+United Arab Emirates	Forenede Arab. Emirater 	AE	ARE
+United Kingdom	Storbritannien 	GB	GBR
+United States of America	USA	US	USA
+Uruguay	Uruguay 	UY	URY
+US Minor Outlying Islands	USA's ydre småøer	UM	UMI
+Uzbekistan	Usbekistan 	UZ	UZB
+Vanuatu	Vanuatu 	VU	VUT
+Venezuela (Bolivarian Republic)	Venezuela 	VE	VEN
+Viet Nam	Vietnam 	VN	VNM
+"Virgin Islands, US"	Jomfruøerne	VI	VIR
+Wallis and Futuna Islands 	Wallis og Futuna	WF	WLF
+Western Sahara	Vest-Sahara	EH	ESH
+Yemen	Yemen 	YE	YEM
+Zambia	Zambia 	ZM	ZMB
+Zimbabwe	Zimbabwe 	ZW	ZWE

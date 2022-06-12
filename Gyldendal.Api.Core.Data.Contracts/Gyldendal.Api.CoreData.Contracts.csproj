@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Version>1.7.9</Version>
+    <PackageId>Gyldendal.Api.Core.Contracts</PackageId>
+    <Product>Gyldendal.Api.Core.Contracts</Product>
+    <PackageVersion>$(Version)</PackageVersion>
+    <PackageOutputPath>..\build_output\packages</PackageOutputPath>
+    <TargetFramework>net461</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <AssemblyVersion>$(Version)</AssemblyVersion>
+    <FileVersion>$(Version)</FileVersion>
+    <IncludeSymbols>true</IncludeSymbols>
+    <Authors>sn.synergy</Authors>
+    <Company>Gyldendal™</Company>
+    <PackageTags>CoreData;Core;Contracts</PackageTags>
+    <Copyright>© Gyldendal</Copyright>
+    <PackageProjectUrl>https://gyldendaldenmark.visualstudio.com/Core%20Data%20Services/_git/core-data-services?path=%2FGyldendal.Api.Core.Data%2FGyldendal.Api.CoreData.ApiClient</PackageProjectUrl>
+    <RepositoryUrl>https://gyldendaldenmark.visualstudio.com/Core%20Data%20Services/_git/core-data-services</RepositoryUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+  <Target Name="PostBuild" AfterTargets="Pack">
+    <Exec Command="nuget push &quot;$(PackageOutputPath)\$(PackageId).$(PackageVersion).nupkg&quot; -ApiKey 24FCB347-75E6-41D6-BF80-E49CB142C092 -Source &quot;https://gyldendalnugetserver.azurewebsites.net/nuget&quot;&#xD;&#xA;nuget push &quot;$(PackageOutputPath)\$(PackageId).$(PackageVersion).symbols.nupkg&quot; -ApiKey 24FCB347-75E6-41D6-BF80-E49CB142C092 -Source &quot;https://gyldendalnugetserver.azurewebsites.net/nuget&quot;&#xD;&#xA;Exit /B 0&#xD;&#xA;" />
+  </Target>
+  <ItemGroup>
+    <PackageReference Include="Gyldendal.Api.CommonContracts" Version="1.8.6" />
+    <PackageReference Include="Gyldendal.Api.ShopServices.Contracts" version="1.6.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+  </ItemGroup>
+</Project>

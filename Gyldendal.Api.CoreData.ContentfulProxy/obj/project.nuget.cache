@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "mzw0nLywWG9eDmD5NC+LFBKJ+aaGnUQ7d/htpIhJi6dyknpt/Y3bYulPBMUEAoYHsnTNrV2wT4dLGX7mfRja9w==",
+  "success": true,
+  "projectFilePath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ContentfulProxy\\Gyldendal.Api.CoreData.ContentfulProxy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\contentful.csharp\\5.0.2\\contentful.csharp.5.0.2.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,1055 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Gyldendal.Api.CoreData</name>
+    </assembly>
+    <members>
+        <member name="T:Gyldendal.Api.CoreData.SwaggerConfig">
+            <summary>
+            Swagger configuration
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.SwaggerConfig.Register">
+            <summary>
+            Registers this instance.
+            </summary>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.WebApiConfig">
+            <summary>
+            Web Api Configuration
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.WebApiConfig.Register(System.Web.Http.HttpConfiguration)">
+             <summary>
+            
+             </summary>
+             <param name="config"></param>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Controllers.CommonLookupsController">
+            <summary>
+            Controller for fetching list of lookup data common for wide range of audience, such as countries list, or maybe state provinces list in future.
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.CommonLookupsController.#ctor(Gyldendal.Api.CoreData.Common.RepositoriesInfrastructure.Repositories.ICommonLookupsRepository)">
+            <summary>
+            Creates a new instance of CommonLookupsController.
+            </summary>
+            <param name="commonLookupsRepository"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.CommonLookupsController.GetCountriesList">
+            <summary>
+            Returns a list of countries (Source: Static)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.CommonLookupsController.GetCountrybyName(System.String)">
+            <summary>
+            Returns a country by name (Source: Static)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.CommonLookupsController.GetCountryByCode(System.String)">
+            <summary>
+            Returns a country by code (Source: Static)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.CommonLookupsController.GetDataScopeWebShops(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope)">
+            <summary>
+            Get list of WebShops against dataScope
+            </summary>
+            <param name="dataScope"></param>
+            <returns>List of web shops related to dataScope</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.CommonLookupsController.GetDataScopeByWebShop(Gyldendal.Api.CommonContracts.WebShop)">
+            <summary>
+            Get list of WebShops against dataScope
+            </summary>
+            <param name="webShop"></param>
+            <returns>List of web shops related to dataScope</returns>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Controllers.GGAController">
+            <summary>
+            Returns GGA Related Data
+            </summary>
+        </member>
+        <member name="F:Gyldendal.Api.CoreData.Controllers.GGAController._isShadowMode">
+            <summary>
+            Used to switch CoreData API between running against Porter(GPM) if true and standard KD if false
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.GGAController.#ctor(Gyldendal.Api.CoreData.Common.DataProviderInfrastructure.IGGAProvider,Gyldendal.Api.CoreData.Business.Porter.Interfaces.IGgaService,Gyldendal.Api.CoreData.Common.ConfigurationManager.IConfigurationManager)">
+            <param name="ggaprovider"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.GGAController.Search(System.String,System.Int32)">
+            <summary>
+            This method returns Title with Authors or only Authors depending upon the provided Mode 
+            </summary>
+            <param name="criteria">Search Criteria</param>
+            <param name="mode">Mode 1=> Title, 2 =>Author</param>
+            <returns>Search Results</returns>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Controllers.ContributorController">
+            <summary>
+            Contributor Controller
+            </summary>
+        </member>
+        <member name="F:Gyldendal.Api.CoreData.Controllers.ContributorController._isShadowMode">
+            <summary>
+            Used to switch CoreData API between running against Porter(GPM) if true and standard KD if false
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorController.#ctor(Gyldendal.Api.CoreData.Common.RepositoriesInfrastructure.Factories.IContributorFactory,Gyldendal.Api.CoreData.Business.Util.IKoncernDataUtils,Gyldendal.Api.CoreData.Common.DataProviderInfrastructure.IContributorDataProvider,Gyldendal.Api.CoreData.Business.Porter.Interfaces.IContributorService,Gyldendal.Api.CoreData.Common.ConfigurationManager.IConfigurationManager)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="contributorFactory">Contributor Factory</param>
+            <param name="koncernDataUtils"></param>
+            <param name="contributorDataProvider"></param>
+            <param name="contributorService"></param>
+            <param name="configurationManager"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorController.GetContributor(Gyldendal.Api.CommonContracts.WebShop,System.String)">
+            <summary>
+            Gets details of a contributor against given id (Source: KD)
+            </summary>
+            <param name="webshop">Webshop</param>
+            <param name="id">Id</param>
+            <returns>Contributor Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorController.GetContributorsByShopFromSolr(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope)">
+            <summary>
+            Gets details of a contributor against given id (Source: Solr)
+            </summary>
+            <param name="dataScope">Webshop</param>
+            <returns>Contributor Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorController.GetContributorsByIdsFromSolr(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope,System.Collections.Generic.IList{System.String})">
+            <summary>
+            Gets details of a contributor against given id (Source: Solr)
+            </summary>
+            <param name="ids"></param>
+            <param name="dataScope">dataScope</param>
+            <returns>Contributor Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorController.GetContributorsByIds(Gyldendal.Api.CommonContracts.WebShop,System.Collections.Generic.IList{System.String})">
+            <summary>
+            Gets details of a contributor against given id (Source: Solr)
+            </summary>
+            <param name="ids"></param>
+            <param name="webShop">dataScope</param>
+            <returns>Contributor Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorController.Search(Gyldendal.Api.CoreData.Contracts.Requests.SearchContributorRequest)">
+            <summary>
+            Gets details of a contributor against given id (Source: Solr)
+            </summary>
+            <returns>Contributor Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorController.SearchByWebShops(Gyldendal.Api.CoreData.Contracts.Requests.SearchContributorByWebShopsRequest)">
+            <summary>
+            Gets details of a contributor against given webshops (Source: Solr)
+            </summary>
+            <returns>Contributor Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorController.SearchBySearchName(Gyldendal.Api.CoreData.Contracts.Requests.SearchContributorRequest)">
+            <summary>
+            Gets details of a contributor against given id (Source: Solr)
+            </summary>
+            <returns>Contributor Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorController.GetContributorsByType(Gyldendal.Api.CommonContracts.WebShop,Gyldendal.Api.CoreData.Contracts.Requests.SearchContributorRequest)">
+            <summary>
+            Gets all contributors for given type and webshop (Source: Solr)
+            </summary>
+            <param name="webshop">Webshop</param>
+            <param name="searchRequest">Contributor search request</param>
+            <returns>List of contributors</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorController.GetUpdatedContributorsCount(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope,System.Int64)">
+            <summary>
+            Returns the number of contributors updated after the given Ticks value (Source: KD).
+            </summary>
+            <param name="dataScope"></param>
+            <param name="updatedAfterTicks"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorController.GetContributorsUpdateInfo(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope,System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Returns the asked page of ContributorupdatedInfo objects, for each contributor,
+            that was updated after the given DateTime, in KoncernDataWebShops database in KD.
+            </summary>
+            <param name="dataScope"></param>
+            <param name="updatedAfterTicks"></param>
+            <param name="pageIndex">Minimum value 1.</param>
+            <param name="pageSize">Minimum value 1.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorController.GetContributorDetail(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope,System.String)">
+            <summary>
+            Gets details of a contributor against given id (Source: KD)
+            </summary>
+            <param name="dataScope">dataScope</param>
+            <param name="id">Id</param>
+            <returns>Contributor Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorController.IsContributorDataAvailableForXMinutes(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope,System.Int16)">
+            <summary>
+            Determines if the contributor data will be available in Koncerndata for the next x minutes  (Source: KD).
+            </summary>
+            <param name="dataScope"></param>
+            <param name="xMinutes">The number of minutes by which the contributor data will be available or not.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorController.GetContributorUpdateInfo(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope,System.String)">
+            <summary>
+            Returns the latest update info for synchronization purposes, for the given contributor id and data scope. (Source: KD)
+            </summary>
+            <param name="dataScope"></param>
+            <param name="contributorId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Controllers.ContributorV2Controller">
+            <summary>
+            Contributor V2 controller
+            </summary>
+        </member>
+        <member name="F:Gyldendal.Api.CoreData.Controllers.ContributorV2Controller._isShadowMode">
+            <summary>
+            Used to switch CoreData API between running against Porter(GPM) if true and standard KD if false
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorV2Controller.#ctor(Gyldendal.Api.CoreData.Common.RepositoriesInfrastructure.Factories.IContributorFactory,Gyldendal.Api.CoreData.Common.DataProviderInfrastructure.IContributorDataProvider,Gyldendal.Api.CoreData.Business.Porter.Interfaces.IContributorService,Gyldendal.Api.CoreData.Common.ConfigurationManager.IConfigurationManager)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="contributorFactory">Contributor Factory</param>
+            <param name="contributorDataProvider"></param>
+            <param name="contributorService"></param>
+            <param name="configurationManager"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorV2Controller.GetContributorV2(Gyldendal.Api.CommonContracts.WebShop,System.String)">
+            <summary>
+            Gets details of a contributor against given id (Source: KD)
+            </summary>
+            <param name="webshop">Webshop</param>
+            <param name="id">Id</param>
+            <returns>Contributor Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorV2Controller.GetContributorsByShopFromSolrV2(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope)">
+            <summary>
+            Gets details of a contributor against given id (Source: Solr)
+            </summary>
+            <param name="dataScope">Webshop</param>
+            <returns>Contributor Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorV2Controller.GetContributorsByIdsFromSolrV2(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope,System.Collections.Generic.IList{System.String})">
+            <summary>
+            Gets details of a contributor against given id (Source: Solr)
+            </summary>
+            <param name="ids"></param>
+            <param name="dataScope">dataScope</param>
+            <returns>Contributor Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorV2Controller.GetContributorsByIdsV2(Gyldendal.Api.CommonContracts.WebShop,System.Collections.Generic.IList{System.String})">
+            <summary>
+            Gets details of a contributor against given id (Source: Solr)
+            </summary>
+            <param name="ids"></param>
+            <param name="webShop">dataScope</param>
+            <returns>Contributor Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorV2Controller.SearchV2(Gyldendal.Api.CoreData.Contracts.Requests.SearchContributorRequest)">
+            <summary>
+            Gets details of a contributor against given id (Source: Solr)
+            </summary>
+            <returns>Contributor Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorV2Controller.SearchByWebShopsV2(Gyldendal.Api.CoreData.Contracts.Requests.SearchContributorByWebShopsRequest)">
+            <summary>
+            Gets details of a contributor against given webshops (Source: Solr)
+            </summary>
+            <returns>Contributor Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorV2Controller.SearchBySearchNameV2(Gyldendal.Api.CoreData.Contracts.Requests.SearchContributorRequest)">
+            <summary>
+            Gets details of a contributor against given id (Source: Solr)
+            </summary>
+            <returns>Contributor Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorV2Controller.GetContributorsByTypeV2(Gyldendal.Api.CommonContracts.WebShop,Gyldendal.Api.CoreData.Contracts.Requests.SearchContributorRequest)">
+            <summary>
+            Gets all contributors for given type and webshop (Source: Solr)
+            </summary>
+            <param name="webshop">Webshop</param>
+            <param name="searchRequest">Contributor search request</param>
+            <returns>List of contributors</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ContributorV2Controller.GetContributorDetailV2(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope,System.String)">
+            <summary>
+            Gets details of a contributor against given id (Source: KD)
+            </summary>
+            <param name="dataScope">dataScope</param>
+            <param name="id">Id</param>
+            <returns>Contributor Details</returns>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Controllers.DiagnosticController">
+            <summary>
+            Different Diagnostic methods for monitoring or internal use.
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.DiagnosticController.#ctor(Gyldendal.Api.CoreData.Common.RepositoriesInfrastructure.Repositories.ICoreDataAgentRepository)">
+             <summary>
+            
+             </summary>
+             <param name="coreDataAgentRepository"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.DiagnosticController.GqlToSolrQuery(System.String,System.Boolean,System.Boolean,Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope)">
+            <summary>
+            Build a Solr query from provided gql.
+            </summary>
+            <param name="expression">Gql Expression</param>
+            <param name="applyBoosting">This will not work for GeneralSearch or WorkSearch</param>
+            <param name="useExpressionTree">This will not work for GeneralSearch or WorkSearch</param>
+            <param name="dataScope">For GeneralSearch only</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.DiagnosticController.GetCoreDataAgentImportState(Gyldendal.Api.CoreData.Common.Request.ImportStates)">
+            <summary>
+            Get Core Data Agent Import State
+            </summary>
+            <param name="importState"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Controllers.ErrorInfoController">
+            <summary>
+            Returning Error Information
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ErrorInfoController.#ctor(Gyldendal.Api.CoreData.Common.Logging.ILogger,Gyldendal.Api.CoreData.Business.Util.IErrorCodeUtil)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="logger"></param>
+            <param name="errorCodeUtil"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ErrorInfoController.GetAllErrorCodes">
+            <summary>
+            Returns all Error Codes of CoreData and it's underlying systems
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ErrorInfoController.GetErrorCodeDetails(System.UInt64)">
+            <summary>
+            Get error details for the specified error code of CoreData
+            </summary>
+            <returns>Error code details</returns>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Controllers.EventController">
+            <summary>
+            Handles events from multiple sources.
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.EventController.#ctor(Gyldendal.Api.CoreData.Common.EventInfrastructure.IEventProcessor)">
+            <summary>
+            
+            </summary>
+            <param name="eventProcessor"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.EventController.ProcessEvent(Gyldendal.Api.CommonContracts.EventInfo)">
+            <summary>
+            Handles data update event coming from 3rd party source
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Controllers.PressSiteController">
+            <summary>
+            Returns Press Site Related Data
+            </summary>
+        </member>
+        <member name="F:Gyldendal.Api.CoreData.Controllers.PressSiteController._isShadowMode">
+            <summary>
+            Used to switch CoreData API between running against Porter(GPM) if true and standard KD if false
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.PressSiteController.#ctor(Gyldendal.Api.CoreData.Common.DataProviderInfrastructure.IPressSiteProvider,Gyldendal.Api.CoreData.Business.Porter.Interfaces.IPressSiteService,Gyldendal.Api.CoreData.Common.ConfigurationManager.IConfigurationManager)">
+            <param name="pressSiteProvider"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.PressSiteController.GetBook(System.String)">
+            <summary>
+            GetBogObject
+            Returns book details  based on the Isbn13 number
+            </summary>
+            <param name="Isbn13"></param>
+            <returns>Product Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.PressSiteController.GetAuthors(Gyldendal.APi.CoreData.Models.AuthorsRequest)">
+            <summary>
+            GetForFatterTable
+            returns list of authors and count of authors
+            </summary>
+            <param name="request"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Gyldendal.Api.CoreData.Controllers.PressSiteController.GetAuthorPhotos(Gyldendal.APi.CoreData.Models.AuthorPhotosRequest)" -->
+        <member name="M:Gyldendal.Api.CoreData.Controllers.PressSiteController.GetBookCovers(Gyldendal.APi.CoreData.Models.BogForsiderRequset)">
+            <summary>
+            GetBogForsiderTable
+            returns book covers based on date range searchstring and gener
+            </summary>
+            <param name="requset"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.PressSiteController.GetNewsletterTitles(Gyldendal.APi.CoreData.Models.NewsletterRequest)">
+            <summary>
+            return news letter based on date range ,gener and options
+            </summary>
+            <param name="request"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.PressSiteController.GetUpcomingTitles(Gyldendal.APi.CoreData.Models.UpcomingTitlesRequest)">
+            <summary>
+            GetKommendeTitleTable
+             returns all the upcoming titles accoring to the search criteria
+            </summary>
+            <param name="requset"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.PressSiteController.GetCategories">
+            <summary>
+            returns all the categories
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.PressSiteController.GetProductsForImport(Gyldendal.APi.CoreData.Models.ProductImportRequest)">
+            <summary>
+            returns all the books based on date range
+            </summary>
+            <param name="request"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.PressSiteController.GetAuthorsForImport">
+            <summary>
+            returns all the authors
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.PressSiteController.GetTypeAheadResults(Gyldendal.APi.CoreData.Models.TypeAheadRequest)">
+            <summary>
+            return list of books,titles and count of books , titles and authors
+            </summary>
+            <param name="request"></param>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Controllers.WorkReviewsController">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:Gyldendal.Api.CoreData.Controllers.WorkReviewsController._isShadowMode">
+            <summary>
+            Used to switch CoreData API between running against Porter(GPM) if true and standard KD if false
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkReviewsController.#ctor(Gyldendal.Api.CoreData.Common.RepositoriesInfrastructure.Factories.IWorkReviewsFactory,Gyldendal.Api.CoreData.Business.Util.IKoncernDataUtils,Gyldendal.Api.CoreData.Common.DataProviderInfrastructure.IWorkReviewDataProvider,Gyldendal.Api.CoreData.Business.Porter.Interfaces.IWorkReviewService,Gyldendal.Api.CoreData.Common.ConfigurationManager.IConfigurationManager)">
+            <summary>
+            
+            </summary>
+            <param name="workReviewsFactory"></param>
+            <param name="koncernDataUtils"></param>
+            <param name="workReviewDataProvider"></param>
+            <param name="workReviewService"></param>
+            <param name="configurationManager"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkReviewsController.GetUpdatedWorkReviewsCount(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope,System.Int64)">
+            <summary>
+            Returns the number of WorkReviews updated after the given Ticks value (Source: KD)
+            </summary>
+            <param name="dataScope"></param>
+            <param name="updatedAfterTicks"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkReviewsController.GetWorkReviewsByShopFromSolr(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope)">
+            <summary>
+            Gets details of a WorkReview against given id (Source: Solr)
+            </summary>
+            <param name="dataScope">WebShop</param>
+            <returns>WorkReview Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkReviewsController.GetWorkReviewsByWorkIdFromSolr(System.Int32,Gyldendal.Api.CommonContracts.WebShop)">
+            <summary>
+            Gets work reviews for given work id (Source: Solr)
+            </summary>
+            <param name="workId"></param>
+            <param name="webShop"></param>
+            <returns>WorkReview</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkReviewsController.GetWorkReviewsUpdateInfo(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope,System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Returns the asked page of WorkReviewUpdatedInfo objects, for each WorkReview,
+            that was updated after the given DateTime, in KD.
+            </summary>
+            <param name="dataScope"></param>
+            <param name="updatedAfterTicks"></param>
+            <param name="pageIndex">Minimum value 1.</param>
+            <param name="pageSize">Minimum value 1.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkReviewsController.GetWorkReview(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope,System.Int32)">
+            <summary>
+            Gets details of a WorkReview against given id (Source: KD)
+            </summary>
+            <param name="dataScope">dataScope</param>
+            <param name="id">Id</param>
+            <returns>WorkReview Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkReviewsController.IsWorkReviewsDataAvailableForXMinutes(Gyldendal.Api.CommonContracts.WebShop,System.Int16)">
+            <summary>
+            Determines if the WorkReviews data will be available for the next x minutes in KD.
+            </summary>
+            <param name="webShop"></param>
+            <param name="xMinutes">The number of minutes by which the WorkReviews data will be available or not.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkReviewsController.GetWorkReviews(System.String,Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope)">
+            <summary>
+            Get list of WebShops against isbn
+            </summary>
+            <param name="isbn"></param>
+            <param name="dataScope"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Controllers.MasterDataController">
+            <summary>
+            Returns Master Data to the Client
+            </summary>
+        </member>
+        <member name="F:Gyldendal.Api.CoreData.Controllers.MasterDataController._isShadowMode">
+            <summary>
+            Used to switch CoreData API between running against Porter(GPM) if true and standard KD if false
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.MasterDataController.#ctor(Gyldendal.Api.CoreData.Common.RepositoriesInfrastructure.Factories.IMasterDataFactory,Gyldendal.Api.CoreData.Business.Porter.Interfaces.IMasterDataService,Gyldendal.Api.CoreData.Common.ConfigurationManager.IConfigurationManager)">
+            <summary>
+            Constructor of the MediaType Controller
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.MasterDataController.GetMediaTypes(Gyldendal.Api.CommonContracts.WebShop)">
+            <summary>
+            Get a collection of media-types for the specified WebSite (Source: KD)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.MasterDataController.GetMaterialTypes(Gyldendal.Api.CommonContracts.WebShop)">
+            <summary>
+            Get a collection of mediatypes for the specified WebSite (Source: KD)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.MasterDataController.GetAreas(Gyldendal.Api.CommonContracts.WebShop)">
+            <summary>
+             Get a collection of Areas for the specified WebSite (Source: KD)
+            </summary>
+            <param name="webShop"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.MasterDataController.GetSubjects(Gyldendal.Api.CommonContracts.WebShop,System.Int32)">
+            <summary>
+             Get a collection of Subjects for the specified WebSite and for Specific Area (Source: KD)
+            </summary>
+            <param name="webShop"></param>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.MasterDataController.GetSubAreas(Gyldendal.Api.CommonContracts.WebShop,System.Int32)">
+            <summary>
+             Get a collection of SubAreasfor the specified WebSite and for Subject (Source: KD)
+            </summary>
+            <param name="webShop"></param>
+            <param name="subjectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.MasterDataController.GetLevels(Gyldendal.Api.CommonContracts.WebShop,System.Int32)">
+            <summary>
+             Get a collection of Levels for the specified WebSite and for Specific Area (Source: KD)
+            </summary>
+            <param name="webShop"></param>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Controllers.SerieSystemController">
+            <summary>
+            Returns System and Series Information to the client
+            </summary>
+        </member>
+        <member name="F:Gyldendal.Api.CoreData.Controllers.SerieSystemController._isShadowMode">
+            <summary>
+            Used to switch CoreData API between running against Porter(GPM) if true and standard KD if false
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.SerieSystemController.#ctor(Gyldendal.Api.CoreData.Common.RepositoriesInfrastructure.Factories.ISystemSeriesFactory,Gyldendal.Api.CoreData.Business.Porter.Interfaces.ISeriesService)">
+            <summary>
+            Constructor of the SerieSystem Controller
+            </summary>
+            <param name="systemSeriesFactory"></param>
+            <param name="seriesService"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.SerieSystemController.GetSeries(Gyldendal.Api.CommonContracts.WebShop,Gyldendal.Api.CoreData.Contracts.Requests.GetSeriesRequest)">
+            <summary>
+             Get a collection of Systems for the specified WebSite (Source: KD)
+            </summary>
+            <param name="webShop"></param>
+            <param name="serieRequest"></param>
+            <returns>List of Systems</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.SerieSystemController.GetSerieById(Gyldendal.Api.CommonContracts.WebShop,System.Int32)">
+            <summary>
+             Get a collection of Systems for the specified WebSite (Source: KD)
+            </summary>
+            <param name="webShop"></param>
+            <param name="serieId"></param>
+            <returns>List of Systems</returns>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Controllers.WorkSearchController">
+            <summary>
+            Contains action methods for Gql based search.
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkSearchController.#ctor(Gyldendal.Api.CoreData.Common.DataProviderInfrastructure.IWorkDataProvider,Gyldendal.Api.CoreData.ResultsPostProcessing.Infrastructure.IWorksResultProcessesExecutor)">
+            <param name="workDataProvider"></param>
+            <param name="worksResultProcessesExecutor"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkSearchController.SearchWorks(Gyldendal.Api.CoreData.Contracts.Requests.WorkSearchRequest)">
+            <summary>
+            Returns a list of Work objects based on the search request criteria (Source: Solr)
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkSearchController.SearchWorksV2(Gyldendal.Api.CoreData.Contracts.Requests.WorkSearchRequestV2)">
+            <summary>
+            Returns a list of Work objects based on the search request criteria (Source: Solr)
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkSearchController.SearchWorksV3(Gyldendal.Api.CoreData.Contracts.Requests.WorkSearchRequestV3)">
+            <summary>
+            Returns a list of Work objects based on the search request criteria (Source: Solr)
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkSearchController.ValidateExpression(System.String)">
+            <summary>
+            Validates a Gql expression and sends an appropriate response.
+            </summary>
+            <param name="expression"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Controllers.ProductController">
+            <inheritdoc />
+            <summary>
+            Returns Product Related Data
+            </summary>
+        </member>
+        <member name="F:Gyldendal.Api.CoreData.Controllers.ProductController._isShadowMode">
+            <summary>
+            Used to switch CoreData API between running against Porter(GPM) if true and standard KD if false
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.#ctor(Gyldendal.Api.CoreData.Common.RepositoriesInfrastructure.Factories.IProductFactory,Gyldendal.Api.CoreData.Business.Util.IKoncernDataUtils,Gyldendal.Api.CoreData.Common.DataProviderInfrastructure.IProductDataProvider,Gyldendal.Api.CoreData.ResultsPostProcessing.Infrastructure.IWorksResultProcessesExecutor,Gyldendal.Api.CoreData.Business.Porter.Interfaces.IProductService,Gyldendal.Api.CoreData.Common.ConfigurationManager.IConfigurationManager)">
+            <param name="productFactory"></param>
+            <param name="koncernDataUtils"></param>
+            <param name="productDataProvider"></param>
+            <param name="worksResultProcessesExecutor"></param>
+            <param name="productService"></param>
+            <param name="configurationManager"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetProductDetails(Gyldendal.Api.CommonContracts.WebShop,System.String,Gyldendal.Api.CoreData.Contracts.Enumerations.ProductType)">
+            <summary>
+            Get Product Details by it's id/isbn (Source: KD)
+            </summary>
+            <param name="webShop"></param>
+            <param name="id"></param>
+            <param name="productType"></param>
+            <returns>Product Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetProductsByDataScope(Gyldendal.Api.CoreData.Contracts.Requests.GetProductsByDataScopeRequest)">
+            <summary>
+            Gets Product details by data scope for given data profile
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetProductCountByDataScope(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope,Gyldendal.Api.CoreData.Contracts.Enumerations.ProductDataProfile)">
+            <summary>
+            Gets Product count by data scope based on data profile
+            </summary>
+            <param name="dataScope"></param>
+            <param name="productDataProfile"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetProductAccessType(System.String)">
+            <summary>
+            Get Product Details by it's id/isbn (Source: KD)
+            </summary>
+            <param name="id"></param>
+            <returns>Product Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetProductsBysIsbns(Gyldendal.Api.CommonContracts.WebShop,System.Collections.Generic.List{System.String},System.Boolean)">
+            <summary>
+            Get List of Product if sales configuration exists (Source: Solr)
+            </summary>
+            <param name="webShop"></param>
+            <param name="isbns"></param>
+            <param name="skipInvalidSaleConfigProds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetProductsBysIsbns(Gyldendal.Api.CoreData.Contracts.Requests.GetProductRequestV2)">
+            <summary>
+            Get request isbns from the provided webshops (Source: Solr)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetProductsBysIsbns(System.Collections.Generic.List{System.String},System.Boolean)">
+            <summary>
+            Get List of Product if sales configuration exists (Source: Solr)
+            </summary>
+            <param name="isbns"></param>
+            <param name="skipInvalidSaleConfigProds"></param>
+            <returns>List of products for given isbns</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetProductsByGql(Gyldendal.Api.CoreData.Contracts.Requests.GetProductsByGqlRequest,System.Boolean)">
+            <summary>
+            Get List of Product based on GQL (Source: Solr)
+            </summary>
+            <param name="request"></param>
+            <param name="skipInvalidSaleConfigProds"></param>
+            <returns>List of products for given isbns</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.SearchProducts(Gyldendal.Api.CoreData.Contracts.Requests.ProductSearchRequest)">
+            <summary>
+            Performs Product search in Solr
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+            <exception cref="T:Gyldendal.Common.WebUtils.Exceptions.ValidationException"></exception>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.SearchProducts(Gyldendal.Api.CoreData.Contracts.Requests.ProductSearchRequestV2)">
+            <summary>
+            Performs Product search (Source: Solr)
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+            <exception cref="T:Gyldendal.Common.WebUtils.Exceptions.ValidationException"></exception>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.AbsoluteSearch(Gyldendal.Api.CoreData.Contracts.Requests.ProductSearchRequest)">
+            <summary>
+            Search products without any default groupBy i.e. Work       (Source: Solr)
+            </summary>
+            <param name="request"></param>
+            <returns>Facets, Paging, Products(without merging in work)</returns>
+            <exception cref="T:Gyldendal.Common.WebUtils.Exceptions.ValidationException"></exception>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.AbsoluteSearchV2(Gyldendal.Api.CoreData.Contracts.Requests.ProductSearchRequestEx)">
+            <summary>
+            Search products without any default groupBy i.e. Work (Source: Solr)
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetLicensedProductsByIsbn(Gyldendal.Api.CommonContracts.WebShop,System.Collections.Generic.IList{System.String},System.Boolean)">
+            <summary>
+            Get List of Products (Source: KD)
+            </summary>
+            <param name="webshop"></param>
+            <param name="isbns">ISBN list</param>
+            <param name="getImageUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.SearchProductsByFixedCriteria(Gyldendal.Api.CoreData.Contracts.Requests.ProductFixSearchRequest)">
+            <summary>
+            Returns a list of Products objects based on the search request criteria (Source: Solr)
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetUpdatedProductsCount(Gyldendal.Api.CommonContracts.WebShop,System.Int64)">
+            <summary>
+            Returns the number of products updated after the given Ticks value,for the given WebShop.
+            updatedAfterTicks Time has to be send in query string see this link
+            http://stackoverflow.com/questions/26659406/trouble-passing-datetime-parameter-to-web-service-in-get
+            (Source: KD)
+            </summary>
+            <param name="webShop">Web Shop</param>
+            <param name="updatedAfterTicks"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetUpdatedProductsCount(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope,System.Int64)">
+            <summary>
+            Returns the number of products updated after the given Ticks value,for the given scope.
+            updatedAfterTicks Time has to be send in query string see this link
+            http://stackoverflow.com/questions/26659406/trouble-passing-datetime-parameter-to-web-service-in-get
+            (Source: KD)
+            </summary>
+            <param name="dataScope">Web Shop</param>
+            <param name="updatedAfterTicks"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetProductsUpdateInfo(Gyldendal.Api.CommonContracts.WebShop,System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Returns the asked page of ProductupdatedInfo objects, for each product, related to the given WebShop,
+            that was updated after the given DateTime, in KD.
+            </summary>
+            <param name="webShop"></param>
+            <param name="updatedAfterTicks"></param>
+            <param name="pageIndex">Minimum value 1.</param>
+            <param name="pageSize">Minimum value 1.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetProductsUpdateInfo(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope,System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Returns the asked page of ProductupdatedInfo objects, for each product, related to the given DataScope,
+            that was updated after the given DateTime, in KD.
+            </summary>
+            <param name="dataScope"></param>
+            <param name="updatedAfterTicks"></param>
+            <param name="pageIndex">Minimum value 1.</param>
+            <param name="pageSize">Minimum value 1.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetCampaignAffectedProducts(Gyldendal.Api.CommonContracts.WebShop,System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Gets all the products for which some campaign exists (Source: KD)
+            </summary>
+            <param name="webShop"></param>
+            <param name="updatedAfterTicks"></param>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns>List of string containing product ids</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetCampaignAffectedProductsCount(Gyldendal.Api.CommonContracts.WebShop,System.Int64)">
+            <summary>
+            Gets count of the products for which campaigns exist (Source: KD)
+            </summary>
+            <param name="webShop">Webshop</param>
+            <param name="updatedAfterTicks">Start date of campaign</param>
+            <returns>Count of campaign affected products</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetUpdatedBundleCampaignsInfo(Gyldendal.Api.CommonContracts.WebShop,System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Gets modified Bundle campaigns (Source: KD)
+            </summary>
+            <param name="webShop"></param>
+            <param name="updatedAfterTicks"></param>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns>List of string containing product ids</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetBundleCampaignsCount(Gyldendal.Api.CommonContracts.WebShop,System.Int64)">
+            <summary>
+            Gets count of the modified bundle campaigns (Source: KD)
+            </summary>
+            <param name="webShop">Webshop</param>
+            <param name="updatedAfterTicks">Start date of campaign</param>
+            <returns>Count of campaign affected products</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.HasActiveCampaign(Gyldendal.Api.CommonContracts.WebShop,System.String)">
+            <summary>
+            Checks whether a product has any active campaign (Source: KD)
+            </summary>
+            <param name="webShop"></param>
+            <param name="productId">Product ID / ISBN</param>
+            <returns>Returns whether a product has one or more active campaigns</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.IsShopDataAvailableForXMinutes(Gyldendal.Api.CommonContracts.WebShop,System.Int16)">
+            <summary>
+            Determines if the Web Shop's data will be available in Koncerndata for the next x minutes (Source: KD)
+            </summary>
+            <param name="webShop"></param>
+            <param name="xMinutes">The number of minutes by which the Web Shop data will be available or not.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetBundleIdsByIsbn(Gyldendal.Api.CommonContracts.WebShop,System.String,System.Int32,System.Int32)">
+            <summary>
+            Return the List of bundle Ids which have specific Isbn (Source: KD)
+            </summary>
+            <param name="webShop"></param>
+            <param name="isbn"></param>
+            <param name="pageIndex">Minimum value 1.</param>
+            <param name="pageSize">Minimum value 1.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetSupplementaryData(System.String)">
+            <summary>
+            Location (URL) of first secured material of the product (Source: KD)
+            </summary>
+            <param name="isbn"></param>
+            <returns>
+            Location (URL) of first secured material of given isbn or null if not found
+            </returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.ProductController.GetProductWebshops(System.Collections.Generic.List{System.String})">
+            <summary>
+            Get list of WebShops against isbn
+            </summary>
+            <param name="isbns"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Controllers.WorkController">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkController.#ctor(Gyldendal.Api.CoreData.Common.Logging.ILogger,Gyldendal.Api.CoreData.Common.RepositoriesInfrastructure.Factories.IWorkFactory,Gyldendal.Api.CoreData.Common.DataProviderInfrastructure.IWorkDataProvider,Gyldendal.Api.CoreData.Business.Porter.Interfaces.IWorkService,Gyldendal.Api.CoreData.Common.ConfigurationManager.IConfigurationManager)">
+            <param name="logger">The _loggers.</param>
+            <param name="workFactory"></param>
+            <param name="workDataProvider"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkController.GetDeletedWorks(Gyldendal.Api.CommonContracts.WebShop,System.Nullable{System.Int64})">
+            <summary>
+            Returns Ids of Deleted Works
+            fromLastUpdated Time has to be send in query string see this link
+            http://stackoverflow.com/questions/26659406/trouble-passing-datetime-parameter-to-web-service-in-get
+            (Source: KD)
+            </summary>
+            <param name="webShop"></param>
+            <param name="fromLastUpdated"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkController.GetWorkById(Gyldendal.Api.CommonContracts.WebShop,System.Int32)">
+            <summary>
+            Returns a Work object for the given Id and WebShop parameters (Source: Solr)
+            </summary>
+            <param name="webShop"></param>
+            <param name="workId"></param>
+            <returns>Work Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkController.GetWorkById(Gyldendal.Api.CommonContracts.WebShop[],System.Int32)">
+            <summary>
+            Returns a Work object for the given Id and WebShops parameters (Source: Solr)
+            </summary>
+            <param name="webShops"></param>
+            <param name="workId"></param>
+            <returns>Work Details</returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkController.GetProductDetails(Gyldendal.Api.CommonContracts.WebShop,Gyldendal.Api.CoreData.Contracts.Enumerations.ProductType,System.String)">
+            <summary>
+            Return Work Object and fill Product details (Source: KD)
+            </summary>
+            <param name="webShop"></param>
+            <param name="productType"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Controllers.WorkController.GetScopeWorksByProductId(Gyldendal.Api.CoreData.Contracts.Enumerations.DataScope,System.String)">
+            <summary>
+            Get list of work (Source: KD)
+            </summary>
+            <param name="dataScope"></param>
+            <param name="isbn"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Filters.ExceptionFilter">
+            <summary>
+            Class ExceptionFilter.
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Filters.ExceptionFilter.#ctor(Gyldendal.Api.CoreData.Common.Logging.ILogger)">
+            <summary>
+            Constructor of work Controller
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Filters.ExceptionFilter.OnException(System.Web.Http.Filters.HttpActionExecutedContext)">
+            <summary>
+            Raises the exception event.
+            </summary>
+            <param name="actionExecutedContext">The context for the action.</param>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Filters.ExceptionFilter.GetBodyFromRequest(System.Web.Http.Filters.HttpActionExecutedContext)">
+            <summary>
+            Method to Read all request content from context. In the process it sets stream position to zero to read contents.
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Filters.IExceptionFilter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Filters.IExceptionFilter.OnException(System.Web.Http.Filters.HttpActionExecutedContext)">
+            <summary>
+            On Exception, This method will be executed
+            </summary>
+            <param name="actionExecutedContext"></param>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Filters.INullValueFilter">
+            <summary>
+            check null value for arguments 
+            </summary>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Filters.IsGdprSafeAttribute">
+            <summary>
+            This attribute will be used to set the isGdprSafe bit in logging database for all the incoming requests.
+            Whenever this attribute is used on any action method or controller, it will determine that the data in the incoming request is GDPR safe or not.
+            </summary>
+        </member>
+        <member name="F:Gyldendal.Api.CoreData.Filters.IsGdprSafeAttribute.IsGdprSafe">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Filters.IsGdprSafeAttribute.#ctor(System.Boolean)">
+            <summary>
+            </summary>
+            <param name="isGdprSafe"></param>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Filters.NullValueFilter">
+            <summary>
+            if action input value is null, throw exception
+            in case of optional parameters null can be pass 
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Filters.NullValueFilter.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+            <inheritdoc />
+            Generate error if action arguments are null
+            ignore nullable parameters
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.Filters.RequestLoggingFilter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.Filters.RequestLoggingFilter.OnActionExecutingAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <param name="actionContext"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.WebApiApplication">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.WebApiApplication.Application_Start">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.WebApiApplication.Application_End">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:Gyldendal.Api.CoreData.DependencyResolver.Ioc">
+            <summary>
+            Ioc container
+            </summary>
+        </member>
+        <member name="P:Gyldendal.Api.CoreData.DependencyResolver.Ioc.Container">
+            <summary>
+            container of simple injector
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Api.CoreData.DependencyResolver.Ioc.SetupContainer">
+            <summary>
+            Setup all interfaces
+            </summary>
+        </member>
+    </members>
+</doc>

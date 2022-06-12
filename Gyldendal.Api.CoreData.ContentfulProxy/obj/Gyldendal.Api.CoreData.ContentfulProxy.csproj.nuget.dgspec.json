@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ContentfulProxy\\Gyldendal.Api.CoreData.ContentfulProxy.csproj": {}
+  },
+  "projects": {
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ContentfulProxy\\Gyldendal.Api.CoreData.ContentfulProxy.csproj": {
+      "version": "4.6.14",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ContentfulProxy\\Gyldendal.Api.CoreData.ContentfulProxy.csproj",
+        "projectName": "Gyldendal.Api.CoreData.ContentfulProxy",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ContentfulProxy\\Gyldendal.Api.CoreData.ContentfulProxy.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ContentfulProxy\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "contentful.csharp": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

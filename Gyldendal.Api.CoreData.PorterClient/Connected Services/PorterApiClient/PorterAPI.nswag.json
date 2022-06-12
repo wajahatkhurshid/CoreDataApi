@@ -1,0 +1,3752 @@
+﻿{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Gyldendal.Porter.Api",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/v1/Contributor/Get": {
+      "post": {
+        "tags": [
+          "Contributor"
+        ],
+        "summary": "Gets a Contributor",
+        "operationId": "Get",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetContributorQuery"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetContributorQuery"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetContributorQuery"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetContributorResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetContributorResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetContributorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Contributor/GetUpdatedContributorsCount": {
+      "get": {
+        "tags": [
+          "Contributor"
+        ],
+        "summary": "Returns the number of contributors updated after the given DateTime.",
+        "operationId": "GetUpdatedContributorsCount",
+        "parameters": [
+          {
+            "name": "webShop",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/WebShop"
+                }
+              ]
+            }
+          },
+          {
+            "name": "updatedAfterTicks",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Contributor/GetContributorsUpdateInfo": {
+      "get": {
+        "tags": [
+          "Contributor"
+        ],
+        "summary": "Returns the asked page of ContributorUpdatedInfo objects, for each contributor",
+        "operationId": "GetContributorsUpdateInfo",
+        "parameters": [
+          {
+            "name": "webShop",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/WebShop"
+                }
+              ]
+            }
+          },
+          {
+            "name": "updatedAfterTicks",
+            "in": "query",
+            "description": "Timestamp to indicate the time a contributor has been updated after",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "pageIndex",
+            "in": "query",
+            "description": "Minimum value 1.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "Minimum value 1.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetContributorsUpdateInfoResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetContributorsUpdateInfoResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetContributorsUpdateInfoResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Contributor/GetContributorUpdateInfo": {
+      "get": {
+        "tags": [
+          "Contributor"
+        ],
+        "summary": "Returns the latest update info for synchronization purposes, for the given contributor id",
+        "operationId": "GetContributorUpdateInfo",
+        "parameters": [
+          {
+            "name": "webShop",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/WebShop"
+                }
+              ]
+            }
+          },
+          {
+            "name": "contributorId",
+            "in": "query",
+            "description": "ID of the contributor",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetContributorsUpdateInfoResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetContributorsUpdateInfoResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetContributorsUpdateInfoResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Contributor/ContributorSearch": {
+      "post": {
+        "tags": [
+          "Contributor"
+        ],
+        "summary": "Get Author by search string(first name)",
+        "operationId": "ContributorSearch",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ContributorSearchQuery"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ContributorSearchQuery"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ContributorSearchQuery"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContributorSearchResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContributorSearchResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContributorSearchResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Contributor/IsContributorDataAvailable": {
+      "post": {
+        "tags": [
+          "Contributor"
+        ],
+        "summary": "Checks that Contributor cooked Collection Exists and its document size is greater than 0",
+        "operationId": "IsContributorDataAvailable",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/GpmSubscription": {
+      "put": {
+        "tags": [
+          "GpmSubscription"
+        ],
+        "summary": "Used by GPM to push new container messages",
+        "operationId": "GpmSubscription",
+        "requestBody": {
+          "description": "JSON payload with container data",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/GpmSubscription/api/v1/CreateSubscription": {
+      "post": {
+        "tags": [
+          "GpmSubscription"
+        ],
+        "summary": "Create subscription and scopes in GPM",
+        "operationId": "CreateSubscription",
+        "parameters": [
+          {
+            "name": "gpmEnvironment",
+            "in": "query",
+            "description": "Dev,Test,QA,Production",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "porterEnvironment",
+            "in": "query",
+            "description": "Dev,Test,QA,Production",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subscriptionName",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GpmSubscriptionResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GpmSubscriptionResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GpmSubscriptionResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/GpmSubscription/api/v1/GetSubscription": {
+      "post": {
+        "tags": [
+          "GpmSubscription"
+        ],
+        "operationId": "GetSubscription",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Subscription"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Subscription"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Subscription"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/GpmSubscription/api/v1/TriggerReplay": {
+      "post": {
+        "tags": [
+          "GpmSubscription"
+        ],
+        "summary": "Triggers a reload of GPM data",
+        "operationId": "TriggerReplay",
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "query",
+            "description": "Subscription to trigger reload for",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "shouldWipeCollections",
+            "in": "query",
+            "description": "Clear collection if set",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/MasterData/api/v1/MasterData/MediaTypes": {
+      "get": {
+        "tags": [
+          "MasterData"
+        ],
+        "summary": "Get collection of Media Types",
+        "operationId": "MediaTypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetMediaTypesResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetMediaTypesResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetMediaTypesResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MasterData/api/v1/MasterData/MaterialTypes": {
+      "get": {
+        "tags": [
+          "MasterData"
+        ],
+        "summary": "Get collection of Material Types",
+        "operationId": "MaterialTypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetMaterialTypesResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetMaterialTypesResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetMaterialTypesResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MasterData/api/v1/MasterData/Areas/{webShop}": {
+      "get": {
+        "tags": [
+          "MasterData"
+        ],
+        "summary": "Get a collection of Areas by webshop",
+        "operationId": "Areas",
+        "parameters": [
+          {
+            "name": "webShop",
+            "in": "path",
+            "required": true,
+            "description": "",
+            "schema": {
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/WebShop"
+                }
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAreasResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAreasResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAreasResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MasterData/api/v1/PorterMasterData/Subjects": {
+      "post": {
+        "tags": [
+          "MasterData"
+        ],
+        "summary": " Get a collection of Subjects for the specified Webshop and for Specific Area\r\n(Source: MongoDB)",
+        "operationId": "Subjects",
+        "requestBody": {
+          "description": "Webshop, AreaId",
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetSubjectsRequest"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetSubjectsRequest"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetSubjectsRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetSubjectsResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetSubjectsResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetSubjectsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MasterData/api/v1/PorterMasterData/SubAreas": {
+      "post": {
+        "tags": [
+          "MasterData"
+        ],
+        "summary": "Get a collection of SubAreas for the specified Webshop and for Subject",
+        "operationId": "SubAreas",
+        "requestBody": {
+          "description": "Webshop,SubjectId",
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetSubAreasRequest"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetSubAreasRequest"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetSubAreasRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetSubAreasResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetSubAreasResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetSubAreasResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MasterData/api/v1/MasterData/Levels": {
+      "post": {
+        "tags": [
+          "MasterData"
+        ],
+        "summary": "Get a collection of Levels for the specified Webshop and for Specific Area",
+        "operationId": "Levels",
+        "requestBody": {
+          "description": "Webshop,AreaId",
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetLevelsRequest"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetLevelsRequest"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetLevelsRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetLevelsResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetLevelsResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetLevelsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Product/api/v1/Product/Details": {
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Get Product Details",
+        "operationId": "Details",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductDetailsRequest"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductDetailsRequest"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductDetailsRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProductDetailsResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProductDetailsResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProductDetailsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Product/api/v1/Product/AccessType": {
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Get Product Access Type",
+        "operationId": "AccessType",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductAccessTypeRequest"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductAccessTypeRequest"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductAccessTypeRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProductAccessTypeResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProductAccessTypeResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProductAccessTypeResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Product/api/v1/Product/BasicDetails": {
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Get Products Basic Detail",
+        "operationId": "BasicDetails",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductsBasicDetailRequest"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductsBasicDetailRequest"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductsBasicDetailRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProductsBasicDetailResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProductsBasicDetailResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProductsBasicDetailResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Product/api/v1/Product/Attachments": {
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Get Product Attachments",
+        "operationId": "Attachments",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductAttachmentsRequest"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductAttachmentsRequest"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductAttachmentsRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProductAttachmentsResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProductAttachmentsResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProductAttachmentsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Product/api/v1/Product/GetUpdateCount": {
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Get count of Products updated for a web shop after the given time.",
+        "operationId": "GetUpdateCount",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductsUpdateCountRequest"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductsUpdateCountRequest"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductsUpdateCountRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Product/api/v1/Product/GetUpdateInfo": {
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Get Products update info",
+        "operationId": "GetUpdateInfo",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductsUpdateInfoRequest"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductsUpdateInfoRequest"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetProductsUpdateInfoRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProductsUpdateInfoResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProductsUpdateInfoResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProductsUpdateInfoResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Product/api/v1/Product/ProductSearch": {
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Get Search Products by Isbn starting with provided value",
+        "operationId": "ProductSearch",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ProductSearchQuery"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ProductSearchQuery"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ProductSearchQuery"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchProductResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchProductResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchProductResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Product/api/v1/Product/IsProductDataAvailable": {
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Checks that Product Collection Exists and its document size is greater than 0",
+        "operationId": "IsProductDataAvailable",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/SolrMonitoring/CompareProducts": {
+      "post": {
+        "tags": [
+          "SolrMonitoring"
+        ],
+        "summary": "Criteria=> 0=All Shops\r\n2=GU,3=HR,5=Munks,11=ClubBogklub,12=ClubBoerne,13=ClubSamleren,14=ClubKrimi,15=ClubPsykeSjael,16=ClubHistorie,17=ClubPaedagogisk,\r\n18=Highlight,19=ClubBoerne3To5,20=ClubBoerne5To10,21=ClubFlamingo,22,23,24,26",
+        "operationId": "CompareProducts",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/SolrMonitoringRequest"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/SolrMonitoringRequest"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/SolrMonitoringRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ComparisonResult"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ComparisonResult"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ComparisonResult"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/SolrMonitoring/CompareContributors": {
+      "post": {
+        "tags": [
+          "SolrMonitoring"
+        ],
+        "summary": "Criteria=> 0=All Shops\r\n2=GU,3=HR,5=Munks,11=ClubBogklub,12=ClubBoerne,13=ClubSamleren,14=ClubKrimi,15=ClubPsykeSjael,16=ClubHistorie,17=ClubPaedagogisk,\r\n18=Highlight,19=ClubBoerne3To5,20=ClubBoerne5To10,21=ClubFlamingo,22,23,24,26",
+        "operationId": "CompareContributors",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/SolrMonitoringRequest"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/SolrMonitoringRequest"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/SolrMonitoringRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ComparisonResult"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ComparisonResult"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ComparisonResult"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/SolrMonitoring/CompareWorkReviews": {
+      "post": {
+        "tags": [
+          "SolrMonitoring"
+        ],
+        "summary": "Criteria=> 0=All Shops\r\n2=GU,3=HR,5=Munks,11=ClubBogklub,12=ClubBoerne,13=ClubSamleren,14=ClubKrimi,15=ClubPsykeSjael,16=ClubHistorie,17=ClubPaedagogisk,\r\n18=Highlight,19=ClubBoerne3To5,20=ClubBoerne5To10,21=ClubFlamingo,22,23,24,26",
+        "operationId": "CompareWorkReviews",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/SolrMonitoringRequest"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/SolrMonitoringRequest"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/SolrMonitoringRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ComparisonResult"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ComparisonResult"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ComparisonResult"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SystemSeries/api/v1/SystemSeries/SeriesById": {
+      "post": {
+        "tags": [
+          "SystemSeries"
+        ],
+        "summary": "Get System Series By Id",
+        "operationId": "SeriesById",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetSeriesRequest"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetSeriesRequest"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetSeriesRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetSeriesResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetSeriesResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetSeriesResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SystemSeries/api/v1/SystemSeries/Series": {
+      "post": {
+        "tags": [
+          "SystemSeries"
+        ],
+        "summary": "Get System Series Collection",
+        "operationId": "Series",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetSeriesPaginatedRequest"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetSeriesPaginatedRequest"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetSeriesPaginatedRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetSeriesPaginatedResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetSeriesPaginatedResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetSeriesPaginatedResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Work/api/v1/Work/Get": {
+      "post": {
+        "tags": [
+          "Work"
+        ],
+        "summary": "Gets a work with full details",
+        "operationId": "Get2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetWorkQuery"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetWorkQuery"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetWorkQuery"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetWorkResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetWorkResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetWorkResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Work/api/v1/Work/GetByProduct": {
+      "post": {
+        "tags": [
+          "Work"
+        ],
+        "summary": "Gets a work by product Id and type",
+        "operationId": "GetByProduct",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetWorkByProductRequest"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetWorkByProductRequest"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetWorkByProductRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetWorkByProductResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetWorkByProductResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetWorkByProductResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/WorkReview/Get": {
+      "post": {
+        "tags": [
+          "WorkReview"
+        ],
+        "summary": "Get WorkReview",
+        "operationId": "Get3",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetWorkReviewQuery"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetWorkReviewQuery"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetWorkReviewQuery"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetWorkReviewResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetWorkReviewResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetWorkReviewResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/WorkReview/GetWorkReviewsUpdateInfo": {
+      "get": {
+        "tags": [
+          "WorkReview"
+        ],
+        "summary": "Returns the asked page of WorkReviewUpdatedInfo objects, for each WorkReview",
+        "operationId": "GetWorkReviewsUpdateInfo",
+        "parameters": [
+          {
+            "name": "updatedAfterTicks",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "pageIndex",
+            "in": "query",
+            "description": "Minimum value 1.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "Minimum value 1.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetWorkReviewUpdateInfoResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetWorkReviewUpdateInfoResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetWorkReviewUpdateInfoResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/WorkReview/GetUpdatedWorkReviewsCount": {
+      "get": {
+        "tags": [
+          "WorkReview"
+        ],
+        "summary": "Returns the number of WorkReviews updated after the given DateTime.",
+        "operationId": "GetUpdatedWorkReviewsCount",
+        "parameters": [
+          {
+            "name": "updatedAfterTicks",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/WorkReview/IsWorkReviewDataAvailable": {
+      "post": {
+        "tags": [
+          "WorkReview"
+        ],
+        "summary": "Checks that WorkReview Collection Exists and its document size is greater than 0",
+        "operationId": "IsWorkReviewDataAvailable",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/WorkReviews/GetWorkReviews": {
+      "post": {
+        "tags": [
+          "WorkReview"
+        ],
+        "summary": "Get WorkReviews against Product",
+        "operationId": "GetWorkReviews",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetWorkReviewsByProductQuery"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetWorkReviewsByProductQuery"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GetWorkReviewsByProductQuery"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WorkReview"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WorkReview"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WorkReview"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Area": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          }
+        }
+      },
+      "Attachment": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "sampleUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "publizonIdentifier": {
+            "type": "string",
+            "nullable": true
+          },
+          "isSecured": {
+            "type": "boolean"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          }
+        }
+      },
+      "ComparisonResult": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "coreComparison": {
+            "nullable": true,
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/CoreComparisonResult"
+              }
+            ]
+          },
+          "shopsComparison": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/ShopComparisonResult"
+            }
+          }
+        }
+      },
+      "Contributor": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "biographyText": {
+            "type": "string",
+            "nullable": true
+          },
+          "bibliography": {
+            "type": "string",
+            "nullable": true
+          },
+          "photoUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "contributorTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "updatedTimestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "webShops": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/WebShop"
+            }
+          }
+        }
+      },
+      "ContributorSearchQuery": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "searchString": {
+            "type": "string",
+            "nullable": true
+          },
+          "page": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "propertiesToInclude": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "ContributorSearchResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "results": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Contributor"
+            }
+          }
+        }
+      },
+      "CoreComparisonResult": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "originalCoreCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "shadowCoreCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "difference": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "EducationLevel": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "levelNumber": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          },
+          "areaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "GetAreasResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "areas": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Area"
+            }
+          }
+        }
+      },
+      "GetContributorQuery": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          }
+        }
+      },
+      "GetContributorResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "contributor": {
+            "nullable": true,
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Contributor"
+              }
+            ]
+          }
+        }
+      },
+      "GetContributorsUpdateInfoResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          }
+        }
+      },
+      "GetLevelsRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          },
+          "areaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        }
+      },
+      "GetLevelsResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "levels": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Level"
+            }
+          }
+        }
+      },
+      "GetMaterialTypesResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "materialTypes": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/MaterialType"
+            }
+          }
+        }
+      },
+      "GetMediaTypesResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "mediaTypes": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/MediaType"
+            }
+          }
+        }
+      },
+      "GetProductAccessTypeRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isbn": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "GetProductAccessTypeResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "accessControl": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "GetProductAttachmentsRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isbn": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "GetProductAttachmentsResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "attachments": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Attachment"
+            }
+          }
+        }
+      },
+      "GetProductDetailsRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          },
+          "isbn": {
+            "type": "string",
+            "nullable": true
+          },
+          "productType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ProductType"
+              }
+            ]
+          }
+        }
+      },
+      "GetProductDetailsResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "product": {
+            "nullable": true,
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Product"
+              }
+            ]
+          }
+        }
+      },
+      "GetProductsBasicDetailRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          },
+          "isbns": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "withImageUrl": {
+            "type": "boolean"
+          }
+        }
+      },
+      "GetProductsBasicDetailResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "productBasicDetails": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/ProductBasicDetail"
+            }
+          }
+        }
+      },
+      "GetProductsUpdateCountRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          },
+          "updatedAfterTicks": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "GetProductsUpdateInfoRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          },
+          "updatedAfterTicks": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "pageIndex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "GetProductsUpdateInfoResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "productUpdateInfos": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/ProductUpdateInfo"
+            }
+          }
+        }
+      },
+      "GetSeriesPaginatedRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          },
+          "seriesType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/SeriesType"
+              }
+            ]
+          },
+          "subject": {
+            "type": "string",
+            "nullable": true
+          },
+          "area": {
+            "type": "string",
+            "nullable": true
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageIndex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sortBy": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/SortBy"
+              }
+            ]
+          },
+          "orderBy": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/SeriesOrderBy"
+              }
+            ]
+          }
+        }
+      },
+      "GetSeriesPaginatedResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "series": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Series"
+            }
+          },
+          "count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageIndex": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "GetSeriesRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          },
+          "seriesId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "GetSeriesResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "series": {
+            "nullable": true,
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Series"
+              }
+            ]
+          }
+        }
+      },
+      "GetSubAreasRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          },
+          "subjectId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        }
+      },
+      "GetSubAreasResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "subAreas": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/SubArea"
+            }
+          }
+        }
+      },
+      "GetSubjectsRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          },
+          "areaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        }
+      },
+      "GetSubjectsResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "subjects": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Subject"
+            }
+          }
+        }
+      },
+      "GetWorkByProductRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "productType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ProductType"
+              }
+            ]
+          },
+          "isbn": {
+            "type": "string",
+            "nullable": true
+          },
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          }
+        }
+      },
+      "GetWorkByProductResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "work": {
+            "nullable": true,
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Work"
+              }
+            ]
+          }
+        }
+      },
+      "GetWorkQuery": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isbn": {
+            "type": "string",
+            "nullable": true
+          },
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          }
+        }
+      },
+      "GetWorkResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "work": {
+            "nullable": true,
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Work"
+              }
+            ]
+          }
+        }
+      },
+      "GetWorkReviewQuery": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          }
+        }
+      },
+      "GetWorkReviewResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "workReview": {
+            "nullable": true,
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WorkReview"
+              }
+            ]
+          }
+        }
+      },
+      "GetWorkReviewsByProductQuery": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isbn": {
+            "type": "string",
+            "nullable": true
+          },
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          }
+        }
+      },
+      "GetWorkReviewUpdateInfoResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "workReviewId": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateType": {
+            "type": "boolean"
+          },
+          "updateTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "GpmSubscriptionResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "subscriptionResult": {
+            "type": "string",
+            "nullable": true
+          },
+          "productScopeResult": {
+            "type": "string",
+            "nullable": true
+          },
+          "workScopeResult": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "Level": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "levelNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          },
+          "areaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "MaterialType": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "MediaType": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "Product": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "isbn": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "subtitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "webText": {
+            "type": "string",
+            "nullable": true
+          },
+          "materialType": {
+            "type": "string",
+            "nullable": true
+          },
+          "mediaType": {
+            "type": "string",
+            "nullable": true
+          },
+          "workId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "workTitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "workDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "productEducationSubjectLevels": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/EducationLevel"
+            }
+          },
+          "firstPrintPublishDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "currentPrintRunPublishDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "readingSamples": {
+            "type": "string",
+            "nullable": true
+          },
+          "seoText": {
+            "type": "string",
+            "nullable": true
+          },
+          "edition": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "noOfPages": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "excuseCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "editorialStaff": {
+            "type": "string",
+            "nullable": true
+          },
+          "publisher": {
+            "type": "string",
+            "nullable": true
+          },
+          "durationInMinutes": {
+            "type": "string",
+            "nullable": true
+          },
+          "stock": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "series": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Series"
+            }
+          },
+          "contributors": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Contributor"
+            }
+          },
+          "isNextPrintRunPlanned": {
+            "type": "boolean"
+          },
+          "url": {
+            "type": "string",
+            "nullable": true
+          },
+          "attachments": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Attachment"
+            }
+          },
+          "materialTypeRank": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "mediaTypeRank": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "grossWeight": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "netWeight": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "height": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "width": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "thicknessDepth": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "reviewCopy": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "webShops": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/WebShop"
+            }
+          },
+          "imprint": {
+            "type": "string",
+            "nullable": true
+          },
+          "indicativePrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "priceWithoutVat": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "priceWithVat": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "updatedTimestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "inspectionCopyAllowed": {
+            "type": "boolean"
+          },
+          "accessControl": {
+            "type": "string",
+            "nullable": true
+          },
+          "websiteAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "productType": {
+            "type": "string",
+            "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "levels": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Level"
+            }
+          },
+          "areas": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Area"
+            }
+          },
+          "subAreas": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/SubArea"
+            }
+          },
+          "subjects": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Subject"
+            }
+          },
+          "subjectCodes": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/SubjectCode"
+            }
+          }
+        }
+      },
+      "ProductBasicDetail": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "subtitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "isbn": {
+            "type": "string",
+            "nullable": true
+          },
+          "mediaType": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "websiteAddress": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "ProductSearchQuery": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isbn": {
+            "type": "string",
+            "nullable": true
+          },
+          "isbns": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "propertiesToInclude": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "authorName": {
+            "type": "string",
+            "nullable": true
+          },
+          "mediaType": {
+            "type": "string",
+            "nullable": true
+          },
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          },
+          "subTitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "pageIndex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productSortByOption": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ProductSortByOptions"
+              }
+            ]
+          },
+          "sortBy": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/SortBy"
+              }
+            ]
+          },
+          "dateFrom": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dateTo": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        }
+      },
+      "ProductSortByOptions": {
+        "type": "string",
+        "enum": [
+          "AuthorName",
+          "Title",
+          "SubTitle",
+          "PublishDate",
+          "Isbn",
+          "MediaType",
+          "Stock",
+          "Default"
+        ]
+      },
+      "ProductType": {
+        "type": "string",
+        "enum": [
+          "None",
+          "SingleProduct",
+          "Bundle"
+        ]
+      },
+      "ProductUpdateInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "productType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ProductType"
+              }
+            ]
+          }
+        }
+      },
+      "PropertyDifference": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "key": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertiesDifferentInOriginal": {
+            "type": "object",
+            "nullable": true,
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "propertiesDifferentInShadow": {
+            "type": "object",
+            "nullable": true,
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "Scope": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "endpoint": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "SearchProductResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "totalResults": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "currentPage": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "results": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Product"
+            }
+          }
+        }
+      },
+      "Series": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "url": {
+            "type": "string",
+            "nullable": true
+          },
+          "parentSeries": {
+            "nullable": true,
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Series"
+              }
+            ]
+          },
+          "parentSerieId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "childSeries": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Series"
+            }
+          },
+          "areas": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Area"
+            }
+          },
+          "subAreas": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/SubArea"
+            }
+          },
+          "educationLevels": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/EducationLevel"
+            }
+          },
+          "subjects": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Subject"
+            }
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedTimestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isSystemSeries": {
+            "type": "boolean"
+          },
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          }
+        }
+      },
+      "SeriesOrderBy": {
+        "type": "string",
+        "enum": [
+          "Name",
+          "UpdatedTimestamp"
+        ]
+      },
+      "SeriesType": {
+        "type": "string",
+        "enum": [
+          "Series",
+          "SystemSeries",
+          "All"
+        ]
+      },
+      "ShopComparisonResult": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "originalCoreCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "shadowCoreCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "difference": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "notFoundInShadow": {
+            "type": "string",
+            "nullable": true
+          },
+          "notFoundInOriginal": {
+            "type": "string",
+            "nullable": true
+          },
+          "itemsDifference": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/PropertyDifference"
+            }
+          }
+        }
+      },
+      "SolrMonitoringRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "shopId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "SortBy": {
+        "type": "string",
+        "enum": [
+          "None",
+          "Asc",
+          "Desc"
+        ]
+      },
+      "SubArea": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          },
+          "subjectId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "Subject": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          },
+          "areaId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "SubjectCode": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "code": {
+            "type": "string",
+            "nullable": true
+          },
+          "parent": {
+            "nullable": true,
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/SubjectCode"
+              }
+            ]
+          }
+        }
+      },
+      "Subscription": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "porterEndpoint": {
+            "type": "string",
+            "nullable": true
+          },
+          "gpmUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "scopes": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Scope"
+            }
+          }
+        }
+      },
+      "WebShop": {
+        "type": "string",
+        "enum": [
+          "None",
+          "GyldendalPlus",
+          "Harmoney",
+          "GU",
+          "HansReitzel",
+          "MunksGaard",
+          "Pressesite",
+          "All"
+        ]
+      },
+      "Work": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "webShop": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WebShop"
+              }
+            ]
+          },
+          "products": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Product"
+            }
+          },
+          "subjectCodes": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/SubjectCode"
+            }
+          },
+          "subjects": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Subject"
+            }
+          },
+          "areas": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Area"
+            }
+          },
+          "levels": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Level"
+            }
+          },
+          "subAreas": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/SubArea"
+            }
+          }
+        }
+      },
+      "WorkReview": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "workId": {
+            "type": "string",
+            "nullable": true
+          },
+          "reviewMedia": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedTimestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "rating": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "review": {
+            "type": "string",
+            "nullable": true
+          },
+          "authorInfo": {
+            "type": "string",
+            "nullable": true
+          },
+          "webShops": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/WebShop"
+            }
+          },
+          "isDeleted": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

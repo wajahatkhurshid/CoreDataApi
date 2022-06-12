@@ -1,0 +1,88 @@
+﻿# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+#-----------------------------------------------------------------------
+#some test synonym mappings unlikely to appear in real input text
+aaafoo => aaabar
+bbbfoo => bbbfoo bbbbar
+cccfoo => cccbar cccbaz
+fooaaa,baraaa,bazaaa
+
+# Some synonym groups specific to this example
+GB,gib,gigabyte,gigabytes
+MB,mib,megabyte,megabytes
+Television, Televisions, TV, TVs
+#notice we use "gib" instead of "GiB" so any WordDelimiterFilter coming
+#after us won't split it into two words.
+
+# Synonym mappings can be used for spelling correction too
+pixima => pixma
+
+# Numbers
+en,1
+to,2
+tre,3
+fire,4
+fem,5
+seks,6
+syv,7
+otte,8
+ni,9
+ti,10
+elleve,11
+tolv,12
+tretten,13
+fjorten,14
+femten,15
+seksten,16
+sytten,17
+atten,18
+nitten,19
+tyve,20
+enogtyve,21
+hundrede,100
+tusind,1000
+
+# Roman numerals
+1,i
+2,ii
+3,iii
+4,iv
+5,v
+6,vi
+7,vii
+8,viii
+9,ix
+10,x
+11,xi
+12,xii
+13,xiii
+14,xiv
+15,xv
+16,xvi
+17,xvii
+18,xviii
+19,xix
+20,xx
+21,xxi
+22,xxii
+23,xxiii
+24,xxiv
+25,xxv
+26,xxvi
+27,xxvii
+28,xxvii
+29,xxix
+30,xxx
+
+# Og
+&,og

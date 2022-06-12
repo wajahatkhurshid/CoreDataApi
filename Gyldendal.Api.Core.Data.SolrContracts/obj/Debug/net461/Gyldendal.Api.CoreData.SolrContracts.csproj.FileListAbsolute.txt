@@ -1,0 +1,15 @@
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.SolrContracts\bin\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.dll.config
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.SolrContracts\bin\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.SolrContracts\bin\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.pdb
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.SolrContracts\bin\Debug\net461\CommonServiceLocator.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.SolrContracts\bin\Debug\net461\Newtonsoft.Json.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.SolrContracts\bin\Debug\net461\CommonServiceLocator.SolrNet.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.SolrContracts\bin\Debug\net461\SolrNet.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.SolrContracts\bin\Debug\net461\System.ValueTuple.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.SolrContracts\obj\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.AssemblyInfoInputs.cache
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.SolrContracts\obj\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.AssemblyInfo.cs
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.SolrContracts\obj\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.csproj.CoreCompileInputs.cache
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.SolrContracts\obj\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.csproj.CopyComplete
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.SolrContracts\obj\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.dll
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.SolrContracts\obj\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.pdb
+D:\Wajahat\CoreDataApi\Gyldendal.Api.Core.Data\Gyldendal.Api.Core.Data.SolrContracts\obj\Debug\net461\Gyldendal.Api.CoreData.SolrContracts.csproj.AssemblyReference.cache

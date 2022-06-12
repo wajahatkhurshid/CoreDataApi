@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\ProjectProperties.props" />
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" version="6.1.3" />
+    <PackageReference Include="Gyldendal.Api.Core.Contracts" version="1.7.9" />
+    <PackageReference Include="NewRelic.Agent.Api" Version="8.21.34" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gyldenal.Api.Core.Data.Gql.Common\Gyldendal.Api.CoreData.Gql.Common.csproj" />
+    <ProjectReference Include="..\Gyldendal.Api.CoreData.ShopAdmin\Gyldendal.Api.CoreData.ShopAdmin.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Irony">
+      <HintPath>..\..\Dependencies\Irony.dll</HintPath>
+    </Reference>
+    <Reference Include="Irony.Samples">
+      <HintPath>..\..\Dependencies\Irony.Samples.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+</Project>

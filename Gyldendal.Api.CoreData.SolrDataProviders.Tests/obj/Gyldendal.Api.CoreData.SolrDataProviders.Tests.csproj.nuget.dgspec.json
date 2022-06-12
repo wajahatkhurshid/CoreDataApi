@@ -1,0 +1,1008 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.SolrDataProviders.Tests\\Gyldendal.Api.CoreData.SolrDataProviders.Tests.csproj": {}
+  },
+  "projects": {
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldenal.Api.Core.Data.Gql.Common\\Gyldendal.Api.CoreData.Gql.Common.csproj": {
+      "version": "4.6.14",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldenal.Api.Core.Data.Gql.Common\\Gyldendal.Api.CoreData.Gql.Common.csproj",
+        "projectName": "Gyldendal.Api.CoreData.Gql.Common",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldenal.Api.Core.Data.Gql.Common\\Gyldendal.Api.CoreData.Gql.Common.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldenal.Api.Core.Data.Gql.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "NewRelic.Agent.Api": {
+              "target": "Package",
+              "version": "[8.21.34, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Business\\Gyldendal.Api.CoreData.Business.csproj": {
+      "version": "4.6.14",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Business\\Gyldendal.Api.CoreData.Business.csproj",
+        "projectName": "Gyldendal.Api.CoreData.Business",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Business\\Gyldendal.Api.CoreData.Business.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Common\\Gyldendal.Api.CoreData.Common.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Common\\Gyldendal.Api.CoreData.Common.csproj"
+              },
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ContentfulProxy\\Gyldendal.Api.CoreData.ContentfulProxy.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ContentfulProxy\\Gyldendal.Api.CoreData.ContentfulProxy.csproj"
+              },
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.PorterClient\\Gyldendal.Api.CoreData.PorterClient.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.PorterClient\\Gyldendal.Api.CoreData.PorterClient.csproj"
+              },
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ShopAdmin\\Gyldendal.Api.CoreData.ShopAdmin.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ShopAdmin\\Gyldendal.Api.CoreData.ShopAdmin.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Gyldendal.Api.Core.Contracts": {
+              "target": "Package",
+              "version": "[1.7.9, )"
+            },
+            "Gyldendal.Api.ShopServices.ApiClient": {
+              "target": "Package",
+              "version": "[1.6.4, )"
+            },
+            "Gyldendal.PulsenServices.ApiClient": {
+              "target": "Package",
+              "version": "[2.5.1, )"
+            },
+            "TidyHtml5Managed": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Common\\Gyldendal.Api.CoreData.Common.csproj": {
+      "version": "4.6.14",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Common\\Gyldendal.Api.CoreData.Common.csproj",
+        "projectName": "Gyldendal.Api.CoreData.Common",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Common\\Gyldendal.Api.CoreData.Common.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.APi.CoreData.Models\\Gyldendal.APi.CoreData.Models.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.APi.CoreData.Models\\Gyldendal.APi.CoreData.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.1.3, )"
+            },
+            "Gyldendal.Api.CommonContracts": {
+              "target": "Package",
+              "version": "[1.8.6, )"
+            },
+            "Gyldendal.Api.Core.Contracts": {
+              "target": "Package",
+              "version": "[1.7.9, )"
+            },
+            "Gyldendal.LoggingManager": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "NewRelic.Agent.Api": {
+              "target": "Package",
+              "version": "[8.21.34, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.DataAccess\\Gyldendal.Api.CoreData.DataAccess.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.DataAccess\\Gyldendal.Api.CoreData.DataAccess.csproj",
+        "projectName": "Gyldendal.Api.CoreData.DataAccess",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.DataAccess\\Gyldendal.Api.CoreData.DataAccess.csproj"
+      },
+      "frameworks": {
+        "net462": {}
+      }
+    },
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlParsing\\Gyldendal.Api.CoreData.GqlValidator.csproj": {
+      "version": "4.6.14",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlParsing\\Gyldendal.Api.CoreData.GqlValidator.csproj",
+        "projectName": "Gyldendal.Api.CoreData.GqlValidator",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlParsing\\Gyldendal.Api.CoreData.GqlValidator.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlParsing\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldenal.Api.Core.Data.Gql.Common\\Gyldendal.Api.CoreData.Gql.Common.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldenal.Api.Core.Data.Gql.Common\\Gyldendal.Api.CoreData.Gql.Common.csproj"
+              },
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ShopAdmin\\Gyldendal.Api.CoreData.ShopAdmin.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ShopAdmin\\Gyldendal.Api.CoreData.ShopAdmin.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.1.3, )"
+            },
+            "Gyldendal.Api.Core.Contracts": {
+              "target": "Package",
+              "version": "[1.7.9, )"
+            },
+            "NewRelic.Agent.Api": {
+              "target": "Package",
+              "version": "[8.21.34, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlToSolrConnector\\Gyldendal.Api.CoreData.GqlToSolrConnector.csproj": {
+      "version": "4.6.14",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlToSolrConnector\\Gyldendal.Api.CoreData.GqlToSolrConnector.csproj",
+        "projectName": "Gyldendal.Api.CoreData.GqlToSolrConnector",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlToSolrConnector\\Gyldendal.Api.CoreData.GqlToSolrConnector.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlToSolrConnector\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldenal.Api.Core.Data.Gql.Common\\Gyldendal.Api.CoreData.Gql.Common.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldenal.Api.Core.Data.Gql.Common\\Gyldendal.Api.CoreData.Gql.Common.csproj"
+              },
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Common\\Gyldendal.Api.CoreData.Common.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Common\\Gyldendal.Api.CoreData.Common.csproj"
+              },
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlParsing\\Gyldendal.Api.CoreData.GqlValidator.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlParsing\\Gyldendal.Api.CoreData.GqlValidator.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Gyldendal.Api.Core.Contracts": {
+              "target": "Package",
+              "version": "[1.7.9, )"
+            },
+            "Gyldendal.Api.CoreData.SolrContracts": {
+              "target": "Package",
+              "version": "[2.3.3, )"
+            },
+            "Gyldendal.Api.CoreData.SolrContracts.ClubPeriod": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Gyldendal.Api.CoreData.SolrContracts.Contributor": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
+            "Gyldendal.Api.CoreData.SolrContracts.WorkReview": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            },
+            "Gyldendal.Utilities": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
+            "SolrNet": {
+              "target": "Package",
+              "version": "[1.0.19, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.SolrRepositories\\Gyldendal.Api.CoreData.SolrDataProviders.csproj": {
+      "version": "4.6.14",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.SolrRepositories\\Gyldendal.Api.CoreData.SolrDataProviders.csproj",
+        "projectName": "Gyldendal.Api.CoreData.SolrDataProviders",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.SolrRepositories\\Gyldendal.Api.CoreData.SolrDataProviders.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.SolrRepositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Business\\Gyldendal.Api.CoreData.Business.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Business\\Gyldendal.Api.CoreData.Business.csproj"
+              },
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlParsing\\Gyldendal.Api.CoreData.GqlValidator.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlParsing\\Gyldendal.Api.CoreData.GqlValidator.csproj"
+              },
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlToSolrConnector\\Gyldendal.Api.CoreData.GqlToSolrConnector.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlToSolrConnector\\Gyldendal.Api.CoreData.GqlToSolrConnector.csproj"
+              },
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.SolrDataProviders.Infrastructure\\Gyldendal.Api.CoreData.SolrDataProviders.Infrastructure.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.SolrDataProviders.Infrastructure\\Gyldendal.Api.CoreData.SolrDataProviders.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.Bootstrapping\\Gyldendal.Api.CoreData.Bootstrapping.csproj": {
+      "version": "4.6.14",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.Bootstrapping\\Gyldendal.Api.CoreData.Bootstrapping.csproj",
+        "projectName": "Gyldendal.Api.CoreData.Bootstrapping",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.Bootstrapping\\Gyldendal.Api.CoreData.Bootstrapping.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.Bootstrapping\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Business\\Gyldendal.Api.CoreData.Business.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Business\\Gyldendal.Api.CoreData.Business.csproj"
+              },
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.SolrRepositories\\Gyldendal.Api.CoreData.SolrDataProviders.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.SolrRepositories\\Gyldendal.Api.CoreData.SolrDataProviders.csproj"
+              },
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.EventProcessor\\Gyldendal.Api.CoreData.EventProcessor.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.EventProcessor\\Gyldendal.Api.CoreData.EventProcessor.csproj"
+              },
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.PorterClient\\Gyldendal.Api.CoreData.PorterClient.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.PorterClient\\Gyldendal.Api.CoreData.PorterClient.csproj"
+              },
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ResultsPostProcessing\\Gyldendal.Api.CoreData.ResultsPostProcessing.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ResultsPostProcessing\\Gyldendal.Api.CoreData.ResultsPostProcessing.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "SimpleInjector": {
+              "target": "Package",
+              "version": "[3.2.4, )"
+            },
+            "SimpleInjector.Extensions.ExecutionContextScoping": {
+              "target": "Package",
+              "version": "[3.2.4, )"
+            },
+            "SimpleInjector.Integration.WebApi": {
+              "target": "Package",
+              "version": "[3.2.4, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ContentfulProxy\\Gyldendal.Api.CoreData.ContentfulProxy.csproj": {
+      "version": "4.6.14",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ContentfulProxy\\Gyldendal.Api.CoreData.ContentfulProxy.csproj",
+        "projectName": "Gyldendal.Api.CoreData.ContentfulProxy",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ContentfulProxy\\Gyldendal.Api.CoreData.ContentfulProxy.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ContentfulProxy\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "contentful.csharp": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.EventProcessor\\Gyldendal.Api.CoreData.EventProcessor.csproj": {
+      "version": "4.6.14",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.EventProcessor\\Gyldendal.Api.CoreData.EventProcessor.csproj",
+        "projectName": "Gyldendal.Api.CoreData.EventProcessor",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.EventProcessor\\Gyldendal.Api.CoreData.EventProcessor.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.EventProcessor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Business\\Gyldendal.Api.CoreData.Business.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Business\\Gyldendal.Api.CoreData.Business.csproj"
+              },
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Common\\Gyldendal.Api.CoreData.Common.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Common\\Gyldendal.Api.CoreData.Common.csproj"
+              },
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ContentfulProxy\\Gyldendal.Api.CoreData.ContentfulProxy.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ContentfulProxy\\Gyldendal.Api.CoreData.ContentfulProxy.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.APi.CoreData.Models\\Gyldendal.APi.CoreData.Models.csproj": {
+      "version": "4.6.14",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.APi.CoreData.Models\\Gyldendal.APi.CoreData.Models.csproj",
+        "projectName": "Gyldendal.APi.CoreData.Models",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.APi.CoreData.Models\\Gyldendal.APi.CoreData.Models.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.APi.CoreData.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.PorterClient\\Gyldendal.Api.CoreData.PorterClient.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.PorterClient\\Gyldendal.Api.CoreData.PorterClient.csproj",
+        "projectName": "Gyldendal.Api.CoreData.PorterClient",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.PorterClient\\Gyldendal.Api.CoreData.PorterClient.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.PorterClient\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.Extensions.ApiDescription.Client": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "NSwag.ApiDescription.Client": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[13.0.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ResultsPostProcessing\\Gyldendal.Api.CoreData.ResultsPostProcessing.csproj": {
+      "version": "4.6.14",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ResultsPostProcessing\\Gyldendal.Api.CoreData.ResultsPostProcessing.csproj",
+        "projectName": "Gyldendal.Api.CoreData.ResultsPostProcessing",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ResultsPostProcessing\\Gyldendal.Api.CoreData.ResultsPostProcessing.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ResultsPostProcessing\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Business\\Gyldendal.Api.CoreData.Business.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.Business\\Gyldendal.Api.CoreData.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ShopAdmin\\Gyldendal.Api.CoreData.ShopAdmin.csproj": {
+      "version": "4.6.14",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ShopAdmin\\Gyldendal.Api.CoreData.ShopAdmin.csproj",
+        "projectName": "Gyldendal.Api.CoreData.ShopAdmin",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ShopAdmin\\Gyldendal.Api.CoreData.ShopAdmin.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ShopAdmin\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.DataAccess\\Gyldendal.Api.CoreData.DataAccess.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.DataAccess\\Gyldendal.Api.CoreData.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.1.3, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.SolrDataProviders.Infrastructure\\Gyldendal.Api.CoreData.SolrDataProviders.Infrastructure.csproj": {
+      "version": "4.6.14",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.SolrDataProviders.Infrastructure\\Gyldendal.Api.CoreData.SolrDataProviders.Infrastructure.csproj",
+        "projectName": "Gyldendal.Api.CoreData.SolrDataProviders.Infrastructure",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.SolrDataProviders.Infrastructure\\Gyldendal.Api.CoreData.SolrDataProviders.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.SolrDataProviders.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlToSolrConnector\\Gyldendal.Api.CoreData.GqlToSolrConnector.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlToSolrConnector\\Gyldendal.Api.CoreData.GqlToSolrConnector.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.SolrDataProviders.Tests\\Gyldendal.Api.CoreData.SolrDataProviders.Tests.csproj": {
+      "version": "4.6.14",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.SolrDataProviders.Tests\\Gyldendal.Api.CoreData.SolrDataProviders.Tests.csproj",
+        "projectName": "Gyldendal.Api.CoreData.SolrDataProviders.Tests",
+        "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.SolrDataProviders.Tests\\Gyldendal.Api.CoreData.SolrDataProviders.Tests.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.SolrDataProviders.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.Bootstrapping\\Gyldendal.Api.CoreData.Bootstrapping.csproj": {
+                "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.Bootstrapping\\Gyldendal.Api.CoreData.Bootstrapping.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "EnterpriseLibrary.SemanticLogging.EventSourceAnalyzer": {
+              "target": "Package",
+              "version": "[2.0.1406.1, )"
+            },
+            "ImpromptuInterface": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            },
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.0.0-beta4, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.0.0-beta4, )"
+            },
+            "Microsoft.AspNet.WebApi.WebHost": {
+              "target": "Package",
+              "version": "[5.2.3, )"
+            },
+            "Microsoft.Data.Services.Client": {
+              "target": "Package",
+              "version": "[5.6.4, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.1.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.11.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

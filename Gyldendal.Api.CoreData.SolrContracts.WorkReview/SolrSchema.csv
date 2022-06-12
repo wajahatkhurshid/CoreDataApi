@@ -1,0 +1,16 @@
+Type,Solr Schema Field,C# Field / Enum Name,Data Type,Indexed,Retrievable,Required,Multi Valued,IsCopyField,CFType,IsUniqueKey,Source,isSelfCopy
+General Search,id,Id,string,1,1,1,,,,1,,
+General Search,workReviewId,WorkReviewId,int,1,1,1,,,,,,
+General Search,workId,WorkId,int,1,1,1,,,,,,
+GQL Fields,websiteId,WebsiteId,int,1,1,1,,,,,,
+General Search,reviewAttributeId,ReviewAttributeId,int,1,1,,,,,,,
+General Search,draft,Draft,boolean,1,1,,,,,,,
+General Search,lastupdated,LastUpdated,date,1,1,,,,,,,
+General Search,rating,Rating,int,1,1,1,,,,,,
+General Search,review,Review,text_general,,1,1,,,,,,
+General Search,shortDescription,ShortDescription,text_general,,1,1,,,,,,
+General Search,titleda,Titleda,text_da,1,1,,,,,,,
+General Search,titleda,titleda,text_general,1,1,,1,1,text_general,,shortDescription,1
+General Search,aboutAuthor,AboutAuthor,text_general,,1,1,,,,,,
+General Search,textType,TextType,text_general,,1,,,,,,,
+General Search,priority,Priority,int,,1,,,,,,,

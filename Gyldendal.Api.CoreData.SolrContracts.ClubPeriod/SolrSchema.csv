@@ -1,0 +1,13 @@
+Type,Solr Schema Field,C# Field / Enum Name,Data Type,Indexed,Retrievable,Required,Multi Valued,IsCopyField,CFType,IsUniqueKey,Source,isSelfCopy
+General Search,id,Id,int,1,1,1,,,,1,,
+General Search,periodCode,PeriodCode,string,1,1,1,,,,,,
+General Search,periodName,PeriodName,string,,1,1,,,,,,
+General Search,cancellationDeadline,CancellationDeadline,date,1,1,1,,,,,,
+General Search,startDate,StartDate,date,1,1,1,,,,,,
+General Search,endDate,EndDate,date,1,1,1,,,,,,
+General Search,clubCode,ClubCode,string,1,1,1,,,,,,
+General Search,clubName,ClubName,string,,1,1,,,,,,
+General Search,branchCode,BranchCode,string,1,1,1,,,,,,
+General Search,branchName,BranchName,string,,1,1,,,,,,
+General Search,productId,ProductId,string,1,1,1,,,,,,
+General Search,lastUpdated,LastUpdated,date,,1,1,,,,,,

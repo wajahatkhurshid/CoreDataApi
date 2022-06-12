@@ -1,0 +1,99 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.2": {
+      "NewRelic.Agent.Api/8.21.34": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NewRelic.Api.Agent.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NewRelic.Api.Agent.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NewRelic.Agent.Api/8.21.34": {
+      "sha512": "Pup9rznXnaTypTokwyAY8IYSG0Jm8GvZoA8GAHf2h57MLnH4xFpiBusNy3obrIjptIU5EMMR68ZxlUzs3/Zl5g==",
+      "type": "package",
+      "path": "newrelic.agent.api/8.21.34",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD_PARTY_NOTICES.txt",
+        "lib/net45/NewRelic.Api.Agent.dll",
+        "lib/netstandard2.0/NewRelic.Api.Agent.dll",
+        "newrelic.agent.api.8.21.34.nupkg.sha512",
+        "newrelic.agent.api.nuspec",
+        "tools/NewRelicHelper.psm1",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.2": [
+      "NewRelic.Agent.Api >= 8.21.34"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "4.6.14",
+    "restore": {
+      "projectUniqueName": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldenal.Api.Core.Data.Gql.Common\\Gyldendal.Api.CoreData.Gql.Common.csproj",
+      "projectName": "Gyldendal.Api.CoreData.Gql.Common",
+      "projectPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldenal.Api.Core.Data.Gql.Common\\Gyldendal.Api.CoreData.Gql.Common.csproj",
+      "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+      "outputPath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldenal.Api.Core.Data.Gql.Common\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "D:\\Wajahat\\CoreDataApi\\NuGet.Config",
+        "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net462"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+        "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net462": {
+        "targetAlias": "net462",
+        "dependencies": {
+          "NewRelic.Agent.Api": {
+            "target": "Package",
+            "version": "[8.21.34, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

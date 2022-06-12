@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "n0M7ouZyCwQ1+1XJGmrM+jqcegTJ/iM+xkgCd0Jyl4x5Z+fnQby3/AHMI5yuVZFb0PAlXQec7UUVEzBGv3Oglg==",
+  "success": true,
+  "projectFilePath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.CoreData.ShopAdmin\\Gyldendal.Api.CoreData.ShopAdmin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\entityframework\\6.1.3\\entityframework.6.1.3.nupkg.sha512"
+  ],
+  "logs": []
+}

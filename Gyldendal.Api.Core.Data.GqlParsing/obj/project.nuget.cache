@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "M2KJ3caZ2Ms7zff7JgoiZ82eZl2F937JzxJgmHMjON7yoV1LjO/K1cO4uI6QJhfMgNo42NdzflITXVKmn/98bw==",
+  "success": true,
+  "projectFilePath": "D:\\Wajahat\\CoreDataApi\\Gyldendal.Api.Core.Data\\Gyldendal.Api.Core.Data.GqlParsing\\Gyldendal.Api.CoreData.GqlValidator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\entityframework\\6.1.3\\entityframework.6.1.3.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\gyldendal.accessservices.contracts\\1.5.1.3\\gyldendal.accessservices.contracts.1.5.1.3.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\gyldendal.api.commoncontracts\\1.8.6\\gyldendal.api.commoncontracts.1.8.6.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\gyldendal.api.core.contracts\\1.7.9\\gyldendal.api.core.contracts.1.7.9.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\gyldendal.api.shopservices.contracts\\1.6.4\\gyldendal.api.shopservices.contracts.1.6.4.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\gyldendal.common.webutils\\2.3.1.13\\gyldendal.common.webutils.2.3.1.13.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.3\\microsoft.aspnet.webapi.client.5.2.3.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\newrelic.agent.api\\8.21.34\\newrelic.agent.api.8.21.34.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\newtonsoft.json\\10.0.3\\newtonsoft.json.10.0.3.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\system.componentmodel.annotations\\4.6.0\\system.componentmodel.annotations.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
